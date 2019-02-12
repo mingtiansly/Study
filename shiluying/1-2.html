@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+        <h1>
+            我是标题一
+        </h1>
+        <h2>这是标题二</h2>
+        <h3>这是标题三</h3>
+        <h6>一直到标题六</h6>
+        <p>我是段落p</p>
+        <a href="#">我是一个超链接</a><br />
+        <img src="#" alt="未定义" width="" height=""/>
+        <!--在html源码中的注释-->
+        <hr >
+        我是一个下标<sub>1</sub><br />
+        我是一个上标<sup>2</sup><br />
+        <b>加粗</b><strong>加粗</strong><i>斜体</i><em>斜体</em><br />
+        
+        <p><bdo dir="rtl">改变顺序-其中dir有两个属性ltr和trl</bdo></p>
+        <p><bdi dir="rtl">bdi相当于11</bdi>一个隔离的属性其中dir有三个属性auto /rtl / ltr默认auto</p>
+        这是文本<del>删除线</del>和文本<ins>下划线</ins>
+        <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <th colspan="2">这是表头,横跨</th>
+                <td rowspan="2">这个是纵跨</td>
+               
+            </tr>
+            <tr>
+            <td>cellspacing表示的的是格边距</td>
+            <td>cellpadding表示的是格间据</td>
+            </tr>
+            
+            
+        </table>
+        <ul>
+            <li>列表标签
+            <ul list-style-type:circle>
+                <li>嵌套</li>
+                <li>空心圆</li>
+            </ul>
+            </li>
+            <li>圆点类型ul</li>
+        </ul>
+        <ol type="I">
+            <li>列表标签
+            <ol type="a">
+                <li>可以改变类型</li>
+                <li>大小写，阿拉伯</li>
+            </ol>
+            </li>
+            <li>数字类型ol</li>
+        </ol>
+        <form action="">
+            <input type="text" name="user" value="用户" />用户名<br/>
+            <input type="password" name="pass" value="密码" />密码<br />
+            <input type="checkbox" name="chec" />复选框1<br />
+            <input type="checkbox" name="chec" checked="checked" />预选复选框2<br />
+            </form>
+            <form action="">
+            <input type="radio" name="sex" />单选框1<br />
+            <input type="radio" name="sex" checked="checked" />预选单选框2<br />
+            <input type="submit" name="sub" value="提交" />
+        </form>
+        <form action="">
+            <select name="down">
+            <option value="down1">下拉菜单</option>
+            <option value="down2">2</option>
+            <option value="down3" selected="selected">预选默认的3</option>
+            </select>
+        </form>
+        <form action="">
+            <input type="button" value="按钮" />
+            <input type="reset" value="重置" />
+        </form>
+        <form action="">
+            <fieldset>
+                <legend>这是一个缺一角的文本框</legend>
+                名字<input type="text" />
+            </fieldset>
+        </form>
+        <iframe src="http://www.w3school.com.cn">
+            内联窗口
+        </iframe>
+        <form action="">
+            <input type="date" name="riqi"/>日期
+        </form>
+	</body>
+</html>

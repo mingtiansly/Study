@@ -1,0 +1,44 @@
+一、css中关于文字文本的
+1.font-style:文本字体样式
+2.font-variant：文本大小写   normal：正常的字体    small-caps：小型的大写字母
+3.font-weight：字体粗细
+4.font-size：字体的尺寸  （可能涉及到首行缩进text-indent）
+5.line-height：行高
+6.font-family：字体类型
+7.text-alight：水平对齐 （三个属性left/right/center）
+8.word-space：单词之间的间隔  letter-spacing：字符间距
+9.text-decoration：元素文本装饰 （）
+10.text-decoration-line：定义线的位置  none无线  underline下划线  
+11.text-decoration-style：线的类型  solid实线  double双线   dotted点状线  dashed虚线
+12.text-shadow：阴影 设置顺序为 水平 垂直 模糊值 颜色（none是无阴影）
+13.text-transform：文本大小写(取值：none无转换、uppercase换成大写、lowercase换成小写)
+二、背景与边框
+1.border：边框 （border: 1px dashed red可以直接这样定义也可以一个边一个边定义）顺序为上右下左
+2.border-style：边框线类型 solid实线  double双线   dotted点状线  dashed虚线 none无轮廓  hidden 隐藏边框
+3.border-color：颜色
+4.border-radius：边角圆角化（两种方法1.直接xxpx；2.百分比）四个角分开写  上右下左
+5.box-shadow：阴影  设置顺序为 水平（正值右边） 垂直（正值在底部） 模糊值半径（不能为负，越大越模糊）   阴影外延值（正值像四周扩散 负值向内收缩） 颜色（none是无阴影）
+6.border-img：边框也可以应用图片（写作：urlxxx；）
+7.background-image：背景图片
+8.background-color：背景颜色
+9.background-repeat：图像填充（repeat-x：横向平铺 repeat-y：纵向平铺 repeat：平铺）
+10.width：宽
+11.height：高
+12.margin：外边距
+13.padding：内边距
+14display：元素是否显示（none不显示且没有物理空间  black块状）
+15.float：浮动（left左  right右）
+16.clear：清除浮动（clear：both）
+17.overflow：溢出  （visible不做处理  hidden超出隐藏  auto：溢出出现滚动条，textarea的默认值是auto）
+
+三、颜色
+1.color：颜色
+2.opacity：不透明度
+四、列表
+1.list-style-type：预设标记类型（  none没有  disc实心圆  circle空心圆  square实心方框  decimal阿拉伯数字）
+2.list-style-image：类型是图片
+五、表格
+1.border-collapse：设置或检索表格的行和单元格的边是合并还是独立（separate 边框独立  collapse相邻边被合并）
+2.border-spacing：表格边框独立时，行和单元格的边框在横向和纵向上的间距（border-spacing:0等同cellspacing="0"）
+3.transform：变换
+4.transition：过渡
