@@ -1,0 +1,247 @@
+*{
+   margin: 0px;
+   padding: 0PX;
+}
+.cont-tu{
+   background-image: url(../imgindex/breadcrumbs-bar-bg.jpg);
+}
+.cont-tu h2{
+    color: floralwhite;
+    font-family: Roboto;
+    font-weight: 300;
+    
+    padding: 40px 0px 40px 25px;
+}
+.cont-tu-1{
+    text-align: right;
+    height: 30px;
+    margin-top: 50px;
+}
+.cont-tu a , i ,span{
+   
+    color: #fff;
+    font-size: 13px;
+    padding-left: 5px;
+}
+.cont-tu a:hover{
+    color: grey;
+    text-decoration: none;
+}
+.hengxian2{
+    height: 2px;
+    width: 60px;
+    background: #56b9ff;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.index-aboutp1{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #939fa6;
+}
+.zuo{
+    float: left;
+}
+.cont-zuo{
+    margin-top: 20px;
+    
+}
+.cont-zuo i{
+    background-color:lavender;
+    border-radius:50% ;
+    margin-right: 20px;
+   
+}
+.cont-zuo a:hover{
+    text-decoration: none;
+    
+}
+.you{
+     float: right;
+}
+.xia-xiao i{
+     position: relative;
+}
+i p{
+    display: none;
+}
+i:hover p{
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: -20px;
+    background-color: #939FA6;
+    border-radius: 10px;
+    padding: 10px;
+    color: #E6E6FA;
+}
+.cont-h5{
+     color:grey;
+     padding: 15px;
+ }
+.cont-p{
+     color: #5F9EA0;
+     padding: 0px 0px 15px 15px;
+ }
+ .cont-a{
+     display:block;
+     width: 142px;
+     height: 50px;
+     background-color:#5F9EA0;
+     border-radius: 10px;
+     margin: 0 auto;
+     text-align: center;
+     padding-top: 10px;
+     margin-top: 30px;
+     color: #E6E6FA;
+ }
+  .cont-a:hover{
+      color: #191970;
+      text-decoration: none;
+  }
+ /* services的css代码 */
+.services-xiao-zp{
+     margin: 30px 20px 0px 0px ;
+     float: left;
+     height: 100%;
+ }
+.services-xiao-zp i{
+    color: #0000FF;
+    padding: 20px;
+    background:#E6E6FA;
+    border-radius: 50%;
+}
+.services-xiao-zp i:hover{
+    color: #F0F8FF;
+    background-color: #0000FF;
+    
+}
+.services-xiao-yp{
+    margin-top: 30px;
+}
+.services-xiao-yp p{
+   color: grey;
+   font-size: 14px;
+  
+}
+.services-xiao-yp h4{
+    font-size: 20px;
+    margin-bottom: 11px;
+    font-family: Roboto;
+    font-weight: 300;
+    color: #505558;
+}
+.services-xiao-yp h4 a{
+    color: #505558;
+}
+.services-xiao-yp h4 a:hover{
+    color: #191970;
+    text-decoration: none;
+}
+.services-lan{
+    margin-top: 20px;
+    text-align: center;
+}
+.services-lan i{
+    color: white;
+    padding-bottom: 10px;
+}
+.services-lan h1{
+    font-size: 50px;
+}
+.services-lan p{
+    font-size: 24px;
+}
+.services-lan h1, p{
+    color: #E6E6FA;
+} 
+.services-pro-i{
+    text-align: center;
+}
+.services-pro-i i{
+    padding: 40px;
+    color: #E6E6FA;
+    background-color: #6495ED;
+    border-radius: 50%;
+}
+.pro-i2, .pro-i3, .pro-i4, .pro-i5, .pro-i6{
+    display: none;
+}
+.services-pro-i h5{
+    font-weight: 300;
+    color: grey;
+}
+.services-pro-i h5 a{
+    color: grey;
+}
+.services-pro-i h5 a:hover{
+    color: coral;
+    text-decoration: none;
+}
+.ser-the{
+    color: #939fa6;
+    font-size: 14px;
+    line-height: 26px;
+    padding-right: 15px;
+}
+.ser-our-top ul li{
+    border: 1px solid #5F9EA0;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.ser-our-top ul li a{
+    color: grey;
+    
+}
+.ser-our-top ul li a:hover{
+    color: grey;
+    text-decoration: none;
+}
+.ser-our-bottom{
+    border-bottom: 1px solid #5F9EA0;
+    border-left: 1px solid #5F9EA0;
+    border-right: 1px solid #5F9EA0;
+    border-radius: 10px;
+    padding: 20px;
+    color: grey;
+}
+.ser-our-bp1{
+    line-height: 28px;
+    color: grey;
+    font-size: 16px;
+}
+.ser-our-bp2 , .ser-our-bp3{
+    display: none;
+    color: grey;
+    font-size: 16px;
+}
+.ser-our-top ul li:hover{
+    color: #191970;
+    background-color: #A9A9A9;
+}
+.ser-our-ul li{
+    text-align: center;
+    background-color:#E6E6FA;
+    color: grey;
+}
+.ser-our-ul li a{
+    display: block;
+    width: 100px;
+    height: 40px;
+    background:#E6E6FA ;
+    font-size: 24px;
+    margin: 0 auto;
+    color: #6495ED;
+    line-height: 40px;
+    border-radius: 5px;
+}
+.ser-our-ul li a:hover{
+    color: white;
+    text-decoration: none;
+    background-color:#505558 ;
+}

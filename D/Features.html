@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>FEATURES</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet"  href="css/cont.css"/>
+            <link rel="stylesheet" href="css/index.css" />
+            <link rel="stylesheet" href="css/about.css" />
+            <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+            <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+            <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+            <script src="js/ser.js"></script>
+            <script src="js/about.js"></script>
+            
+            <style type="text/css">
+            	
+            .progress1{
+                          width: 150px;
+                          height: 150px;
+                          line-height: 150px;
+                          background: none;
+                          margin: 0 auto;
+                          box-shadow: none;
+                          position: relative;
+                      }
+             .progress1:after{
+                          content: "";
+                          width: 100%;
+                          height: 100%;
+                          border-radius: 50%;
+                          border: 2px solid #fff;
+                          position: absolute;
+                          top: 0;
+                          left: 0;
+                      }
+             .progress1 > span{
+                          width: 50%;
+                          height: 100%;
+                          overflow: hidden;
+                          position: absolute;
+                          top: 0;
+                          z-index: 1;
+                      }
+            .progress1 .progress-left{
+                          left: 0;
+                      }
+            .progress1 .progress-bar{
+                          width: 100%;
+                          height: 100%;
+                          background: none;
+                          border-width: 2px;
+                          border-style: solid;
+                          position: absolute;
+                          top: 0;
+                      }
+             .progress1 .progress-left .progress-bar{
+                          left: 100%;
+                          border-top-right-radius: 80px;
+                          border-bottom-right-radius: 80px;
+                          border-left: 0;
+                          -webkit-transform-origin: center left;
+                          transform-origin: center left;
+                      }
+             .progress1 .progress-right{
+                          right: 0;
+                      }
+             .progress1 .progress-right .progress-bar{
+                          left: -100%;
+                          border-top-left-radius: 80px;
+                          border-bottom-left-radius: 80px;
+                          border-right: 0;
+                          -webkit-transform-origin: center right;
+                          transform-origin: center right;
+                          animation: loading-1 1.8s linear forwards;
+                      }
+             .progress1 .progress-value{
+                          width: 85%;
+                          height: 85%;
+                          border-radius: 50%;
+                          border: 2px solid #ebebeb;
+                          font-size: 32px;
+                          line-height: 125px;
+                          text-align: center;
+                          position: absolute;
+                          top: 7.5%;
+                          left: 7.5%;
+                      }
+              .progress1.blue .progress-bar{
+                          border-color: #049dff;
+                      }
+             .progress1.blue .progress-value{
+                          color: #049dff;
+                      }
+             .progress1.blue .progress-left .progress-bar{
+                          animation: loading-2 1.5s linear forwards 1.8s;
+                      }
+             .progress1.yellow .progress-bar{
+                          border-color: #fdba04;
+                      }
+             .progress.yellow .progress-value{
+                          color: #fdba04;
+                      }
+             .progress1.yellow .progress-left .progress-bar{
+                          animation: loading-3 1s linear forwards 1.8s;
+                      }
+             .progress1.pink .progress-bar{
+                          border-color: #ed687c;
+                      }
+             .progress1.pink .progress-value{
+                          color: #ed687c;
+                      }
+             .progress1.pink .progress-left .progress-bar{
+                          animation: loading-4 0.4s linear forwards 1.8s;
+                      }
+             .progress1.green .progress-bar{
+                          border-color: #1abc9c;
+                      }
+             .progress1.green .progress-value{
+                          color: #1abc9c;
+                      }
+             .progress1.green .progress-left .progress-bar{
+                          animation: loading-5 1.2s linear forwards 1.8s;
+                      }
+             @keyframes loading-1{
+                          0%{
+                              -webkit-transform: rotate(0deg);
+                              transform: rotate(0deg);
+                          }
+                          100%{
+                              -webkit-transform: rotate(180deg);
+                              transform: rotate(180deg);
+                          }
+                      }
+             @keyframes loading-2{
+                          0%{
+                              -webkit-transform: rotate(0deg);
+                              transform: rotate(0deg);
+                          }
+                          100%{
+                              -webkit-transform: rotate(144deg);
+                              transform: rotate(144deg);
+                          }
+                      }
+             @keyframes loading-3{
+                          0%{
+                              -webkit-transform: rotate(0deg);
+                              transform: rotate(0deg);
+                          }
+                          100%{
+                              -webkit-transform: rotate(90deg);
+                              transform: rotate(90deg);
+                          }
+                      }
+              @keyframes loading-4{
+                          0%{
+                              -webkit-transform: rotate(0deg);
+                              transform: rotate(0deg);
+                          }
+                          100%{
+                              -webkit-transform: rotate(36deg);
+                              transform: rotate(36deg);
+                          }
+                      }
+             @keyframes loading-5{
+                          0%{
+                              -webkit-transform: rotate(0deg);
+                              transform: rotate(0deg);
+                          }
+                          100%{
+                              -webkit-transform: rotate(126deg);
+                              transform: rotate(126deg);
+                          }
+                      }
+             @media only screen and (max-width: 990px){
+                          .progress{ margin-bottom: 20px; }
+                      }
+            </style>
+            
+        </head>
+        <body data-spy="scroll" data-target=".navbar" data-offset="50">
+            <div class="container-fluid" style="padding-left: 0px;padding-right: 0px;">            
+              <div class="fixed-top" style=" width: 100%; height: 100px; background-color: #F0F8FF;" > 
+                <div class="container  ">
+                    <div class="col-4 index-img-1"><img src="imgindex/logo(1).png"  height="auto" class="img-fluid"/></div>
+                    <nav class="navbar navbar-expand-lg navbar-light col-8" style="float: right;
+                     position:relative; z-index: 1000;">
+                        <button class="navbar-toggler  collapsed" type="button" data-toggle="collapse"
+                         data-target="#collapsibleNavbar" aria-expanded="true" >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse " id="collapsibleNavbar" style="width: 100%; z-index: 1000;">
+                            <ul class="navbar-nav nav-justified" style="width: 100%;">
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Services.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="About.html">About us</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="Portfolio.html" 
+                                    id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                                     aria-haspopup="true" aria-expanded="false">  Portfolio</a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                        </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" 
+                                    id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Blog</a>
+                    
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" href="#" 
+                                        id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Features</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                     </nav>
+                    </div>
+                </div> 
+                <div style="height: 100px;"></div>
+                <!-- cont图片 -->
+               <div class="cont-tu">
+                   <div class="container row" style="margin: 0 auto;">
+                       <div class="col-6"><h2>Shortcodes</h2></div>
+                       <div class="col-6">
+                           <div class="cont-tu-1">
+                       <a href="#">Home</a><i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                       <span>Shortcodes</span>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <!-- Pricing tables -->
+               <div class="container" style="margin: 0 auto; margin-top: 40px;">
+                   <h3 class="feat-pric"> Pricing tables</h3>
+                   <div class="hengxian-pric"></div>
+               
+               <!-- 列表4 -->
+               
+               <div class="row" style="margin-top:30px ;">
+                   <div class="col-sm-3 feat-ul ">
+                       <ul class="list-group">
+                        <li class="list-group-item">Basic</li>
+                        <li class="list-group-item"  style="background-color: #f2f4f5;"><span style="font-size: 30px;color: #808080;">$199</span>per month</li>
+                        <li class="list-group-item"> Nice features</li>
+                        <li class="list-group-item"> Easy to customize</li>
+                        <li class="list-group-item"> 100 GB</li>
+                        <li class="list-group-item"> Perfect pixels</li>
+                        <li class="list-group-item"> Retina ready</li>
+                        <li class="list-group-item"><a href="#">Purchase</a></li>
+                      </ul>
+                   </div>
+                    <div class="col-sm-3 feat-ul">
+                       <ul class="list-group">
+                        <li class="list-group-item">Business</li>
+                        <li class="list-group-item" style="background-color: #1D7DB1; color: white">
+                            <span style="font-size: 30px;color: white;">$299</span>per month</li>
+                        <li class="list-group-item"> Nice features</li>
+                        <li class="list-group-item"> Easy to customize</li>
+                        <li class="list-group-item"> 100 GB</li>
+                        <li class="list-group-item"> Perfect pixels</li>
+                        <li class="list-group-item"> Retina ready</li>
+                        <li class="list-group-item"><a href="#">Purchase</a></li>
+                      </ul>
+                   </div>
+                    <div class="col-sm-3 feat-ul">
+                       <ul class="list-group">
+                        <li class="list-group-item">Deluxe</li>
+                        <li class="list-group-item " style="background-color: #f2f4f5;">
+                            <span style="font-size: 30px;color: #808080;">$399</span>per month</li>
+                        <li class="list-group-item"> Nice features</li>
+                        <li class="list-group-item"> Easy to customize</li>
+                        <li class="list-group-item"> 100 GB</li>
+                        <li class="list-group-item"> Perfect pixels</li>
+                        <li class="list-group-item"> Retina ready</li>
+                        <li class="list-group-item"><a href="#">Purchase</a></li>
+                      </ul>
+                   </div>
+                    <div class="col-sm-3 feat-ul">
+                       <ul class="list-group">
+                        <li class="list-group-item">Vip</li>
+                        <li class="list-group-item" style="background-color: #f2f4f5;"><span style="font-size: 30px;color: #808080;">$599</span>per month</li>
+                        <li class="list-group-item"> Nice features</li>
+                        <li class="list-group-item"> Easy to customize</li>
+                        <li class="list-group-item"> 100 GB</li>
+                        <li class="list-group-item"> Perfect pixels</li>
+                        <li class="list-group-item"> Retina ready</li>
+                        <li class="list-group-item"><a href="#">Purchase</a></li>
+                      </ul>
+                   </div>
+               </div>
+            </div>  
+           <!-- 列表3 -->  
+           <div class="container" style="margin: 0 auto;">
+               <div class="row" style="margin-top:30px ;">
+                   <div class="col-sm-4 feat-ul ">
+                       <ul class="list-group">
+                        <li class="list-group-item">Basic</li>
+                        <li class="list-group-item"  style="background-color: #f2f4f5;"><span style="font-size: 30px;color: #808080;">$199</span>per month</li>
+                        <li class="list-group-item"> Nice features</li>
+                        <li class="list-group-item"> Easy to customize</li>
+                        <li class="list-group-item"> 100 GB</li>
+                        <li class="list-group-item"> Perfect pixels</li>
+                        <li class="list-group-item"> Retina ready</li>
+                        <li class="list-group-item"><a href="#">Purchase</a></li>
+                      </ul>
+                   </div>
+                    <div class="col-sm-4 feat-ul">
+                       <ul class="list-group">
+                        <li class="list-group-item">Business</li>
+                        <li class="list-group-item" style="background-color: #1D7DB1; color: white">
+                            <span style="font-size: 30px;color: white;">$299</span>per month</li>
+                        <li class="list-group-item"> Nice features</li>
+                        <li class="list-group-item"> Easy to customize</li>
+                        <li class="list-group-item"> 100 GB</li>
+                        <li class="list-group-item"> Perfect pixels</li>
+                        <li class="list-group-item"> Retina ready</li>
+                        <li class="list-group-item"><a href="#">Purchase</a></li>
+                      </ul>
+                   </div>
+                    <div class="col-sm-4 feat-ul">
+                       <ul class="list-group">
+                        <li class="list-group-item">Deluxe</li>
+                        <li class="list-group-item " style="background-color: #f2f4f5;">
+                            <span style="font-size: 30px;color: #808080;">$399</span>per month</li>
+                        <li class="list-group-item"> Nice features</li>
+                        <li class="list-group-item"> Easy to customize</li>
+                        <li class="list-group-item"> 100 GB</li>
+                        <li class="list-group-item"> Perfect pixels</li>
+                        <li class="list-group-item"> Retina ready</li>
+                        <li class="list-group-item"><a href="#">Purchase</a></li>
+                      </ul>
+                   </div>
+                </div>
+           </div>
+           <div class="container" style="margin: 0 auto; margin-top:80px;">
+               <h3 class="feat-pric"> Accordions & toggles</h3>
+               <div class="hengxian-pric"></div>
+                <div class="row" style="margin-top: 30px;">
+                    <div class="col-sm-6">
+                        <div class="accordion" id="accordionExample">
+                          <div class="card">
+                            <div class="card-header" id="headingOne">
+                              <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                  Who we are?
+                                </button>
+                              </h5>
+                            </div>
+                                                
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                              <div class="card-body">
+                                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                                  nonumy eirmod tempor invidunt ut labore. Lorem ipsum dolor sit amet, 
+                                  consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+                                  labore.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                  nonumy eirmod tempor invidunt ut labore
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header" id="headingTwo">
+                              <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  Our mission
+                                </button>
+                              </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                              <div class="card-body">
+                                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                                    nonumy eirmod tempor invidunt ut labore. Lorem ipsum dolor sit amet, 
+                                    consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+                                    labore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
+                                    diam nonumy.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-header" id="headingThree">
+                              <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                 Our skills
+                                </button>
+                              </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                              <div class="card-body">
+                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                                    nonumy eirmod tempor invidunt ut labore. Lorem ipsum dolor sit amet, 
+                                    consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+                                    labore.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                    nonumy eirmod tempor invidunt ut labore.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="ser-our">
+                            <div class="ser-our-top">
+                                <ul class="nav">
+                                    <li class="col-md-4 nav-item ser-our-top1  active"><a  href="#" data-toggle="pill">What we do</a></li>
+                                    <li class="col-md-4 nav-item ser-our-top2"><a href="#bottom1" data-toggle="pill">Why we do it</a></li>
+                                    <li class="col-md-4 nav-item ser-our-top3"><a href="#bottom1" data-toggle="pill">How we do it</a></li>
+                                </ul>
+                            </div>
+                            <div class="ser-our-bottom" id="bottom1">
+                                <p class="ser-our-bp1">
+                        								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                        								nonumy eirmod tempor invidunt ut labore. Lorem ipsum dolor sit amet, 
+                        								consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+                        								labore.
+                        								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                        								nonumy eirmod tempor invidunt ut labore. Lorem ipsum dolor sit amet.
+                                </p>
+                                <p class="ser-our-bp2">
+                                	<!-- Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                                	nonumy eirmod tempor invidunt ut labore. Lorem ipsum dolor sit amet, 
+                                	consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+                                	labore. -->						
+                                	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                                	nonumy eirmod tempor invidunt ut labore. Lorem ipsum dolor sit amet.
+                                  consetetur sadipscing elitr, sed diam 
+                                  nonumy eirmod tempor invidunt ut labore. Lorem ipsum dolor sit amet.
+                                </p>
+                                <p class="ser-our-bp3">
+                                	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                                  nonumy eirmod tempor invidunt ut labore. Lorem ipsum dolor sit amet, 
+                                	consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+                                	labore.consetetur sadipscing elitr, sed diam 
+                                	nonumy eirmod tempor invidunt ut labore. Lorem ipsum dolor sit amet.
+                                	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                                	nonumy eirmod tempor invidunt ut labore. Lorem ipsum dolor sit amet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+           <!-- Parallax section蓝色通常背景 -->
+           <div class="container-fluid" style="background: rgba(0,32,55,0.9); margin-top: 30px;">
+               <div class="container" style="margin: 0 auto;">
+                   <h5 class="index-about1" style="color: white;">Parallax section</h5>
+                   <div class="hengxian2"></div>
+                   <div class="row">
+                       <div class="col-sm-3 services-lan" >
+                           <i class="fa fa-user-o fa-4x"  aria-hidden="true"></i>
+                           <h1 id="nm">11700</h1>
+                           <div class="hengxian2" style="margin-top: 10px; margin-bottom: 10px;"></div>
+                           <p>happy customers</p>
+                       </div>
+                       <div class="col-sm-3 services-lan">
+                           <i class="fa fa-file-image-o fa-4x" aria-hidden="true"></i>
+                           <h1  id="nm1">5570</h1>
+                           <div class="hengxian2" style="margin-top: 10px; margin-bottom: 10px;"></div>
+                           <p>pixels used</p>
+                       </div>
+                       <div class="col-sm-3 services-lan" >
+                           <i class="fa fa-briefcase fa-4x" aria-hidden="true"></i>
+                           <h1 id="nm2">4780</h1>
+                           <div class="hengxian2" style="margin-top: 10px; margin-bottom: 10px;"></div>
+                           <p>letters sent</p>
+                       </div>
+                       <div class="col-sm-3 services-lan">
+                           <i class="fa fa-user-o fa-4x" aria-hidden="true"></i>
+                           <h1 id="nm3">57000</h1>
+                           <div class="hengxian2" style="margin-top: 10px; margin-bottom: 10px;"></div>
+                           <p>projects done</p>
+                       </div>
+                   </div>
+               </div>
+               
+           </div>
+           <div class="clear"></div>
+           <!-- button按钮 -->
+           <div class="container" style="margin: 0 auto;margin-top: 40px;">
+               <h3 class="feat-pric"> Buttons</h3>
+               <div class="hengxian-pric"></div>
+               <div class="row">
+               <div class="fea-bt-top" style="margin-top: 40px;">
+                   <a href="#" class="featbt-a1 featbt-a">Extra Large</a>
+                   <a href="#" class="featbt-a2 featbt-a">Extra Large</a>
+                   <a href="#" class="featbt-a3 featbt-a">Extra Large</a>
+                   <a href="#" class="featbt-a4 featbt-a">Extra Large</a>
+                   <a href="#" class="featbt-a5 featbt-a">Extra Large</a>
+                   <a href="#" class="featbt-a6 featbt-a">Extra Large</a>
+                   
+               </div>
+               <div class="clear"></div>
+               <div class="fea-bt-top">
+                   <a href="#" class="featbt-a1 featbt-aa">Large One</a>
+                   <a href="#" class="featbt-a2 featbt-aa">Large One</a>
+                   <a href="#" class="featbt-a3 featbt-aa">Large One</a>
+                   <a href="#" class="featbt-a4 featbt-aa">Large One</a>
+                   <a href="#" class="featbt-a5 featbt-aa">Large One</a>
+                   <a href="#" class="featbt-a6 featbt-aa">Large One</a>
+                   
+               </div>
+                <div class="clear"></div>
+               <div class="fea-bt-top">
+                   <a href="#" class="featbt-a1 featbt-3a">Medium</a>
+                   <a href="#" class="featbt-a2 featbt-3a">Medium</a>
+                   <a href="#" class="featbt-a3 featbt-3a">Medium</a>
+                   <a href="#" class="featbt-a4 featbt-3a">Medium</a>
+                   <a href="#" class="featbt-a5 featbt-3a">Medium</a>
+                   <a href="#" class="featbt-a6 featbt-3a">Medium</a>
+                   
+               </div>
+               <div class="clear"></div>
+               <div class="fea-bt-top">
+                   <a href="#" class="featbt-a1 featbt-4a">Small</a>
+                   <a href="#" class="featbt-a2 featbt-4a">Small</a>
+                   <a href="#" class="featbt-a3 featbt-4a">Small</a>
+                   <a href="#" class="featbt-a4 featbt-4a">Small</a>
+                   <a href="#" class="featbt-a5 featbt-4a">Small</a>
+                   <a href="#" class="featbt-a6 featbt-4a">Small</a>
+                   
+               </div>
+                <div class="clear"></div>
+                <div class="fea-bt-top">
+                    <a href="#" class="featbt-a2 featbt-4a" style="margin-top: 20px;border-radius: 20px;">Rounded</a>
+                    <a href="#" class="featbt-a3 featbt-3a" style="margin-top: 17px;border-radius: 30px;">Rounded</a>
+                    <a href="#" class="featbt-a5 featbt-aa" style="margin-top: 14px;border-radius: 40px;">Rounded</a>
+                    <a href="#" class="featbt-a6 featbt-a" style="border-radius: 50px;">Rounded</a>
+                </div>
+                 <div class="clear"></div>
+               
+              </div>
+           </div>
+           <!-- 表格 -->
+           <div class="container" style="margin: 0 auto;margin-top: 40px;">
+               <h3 class="feat-pric"> Tables</h3>
+               <div class="hengxian-pric"></div>
+               <table class="table table-bordered feat-table">
+                    <thead>
+                      <tr>
+                        <th>Corporate theme</th>
+                        <th>Clean & strong style</th>
+                        <th>Easy to customize</th>
+                        <th>Lots of good features</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+						<td>Nice features</td>
+						<td>Nice features</td>
+						<td>Nice features</td><td>Nice features</td>
+								
+					  </tr>
+                      <tr>
+						<td>Easy to customize</td>
+					    <td>Easy to customize</td>
+						<td>Easy to customize</td>
+						<td>Easy to customize</td>
+					  </tr>
+                      <tr>
+						<td>100GB</td>
+						<td>100GB</td>
+						<td>100GB</td>
+						<td>100GB</td>
+					  </tr>
+                      <tr>
+						<td>Perfect pixels</td>
+						<td>Perfect pixels</td>
+						<td>Perfect pixels</td>
+						<td>Perfect pixels</td>
+					  </tr>
+                      <tr>
+						<td>Retina ready</td>
+						<td>Retina ready</td>
+						<td>Retina ready</td>
+						<td>Retina ready</td>
+			 		  </tr>
+                    </tbody>
+                </table>
+           </div>
+            <div class="container" style="margin: 0 auto;margin-top: 40px;">
+                <table class="table table-bordered feat-table2">
+					<thead>
+                        <tr>
+                                <th>Corporate theme</th>
+                                <th>Clean &amp; strong style</th>
+                                <th>Easy to customize</th>
+                                <th>Lots of good features</th>
+                            </tr>
+							<tr>
+								<td>Nice features</td>
+								<td>Nice features</td>
+								<td>Nice features</td>
+								<td>Nice features</td>
+							</tr>
+							<tr>
+								<td>Easy to customize</td>
+								<td>Easy to customize</td>
+								<td>Easy to customize</td>
+								<td>Easy to customize</td>
+							</tr>
+							<tr>
+								<td>100GB</td>
+								<td>100GB</td>
+								<td>100GB</td>
+								<td>100GB</td>
+							</tr>
+							<tr>
+								<td>Perfect pixels</td>
+								<td>Perfect pixels</td>
+								<td>Perfect pixels</td>
+								<td>Perfect pixels</td>
+							</tr>
+							<tr>
+								<td>Retina ready</td>
+								<td>Retina ready</td>
+								<td>Retina ready</td>
+								<td>Retina ready</td>
+							</tr>
+						</thead></table>
+            </div>
+          <!--  Knobs -->
+            <div class="container" style="margin: 0 auto;margin-top: 40px;">
+                <h3 class="feat-pric feat-knobs">Knobs</h3>
+               <!-- <div class="hengxian-pric"></div> -->
+                <!-- 圆形进度条 -->
+                 
+                     <div class="row" style="margin-top: 40px;">
+                         <div class="col-md-3 col-sm-6">
+                             <div class="progress1 blue">
+                                 <span class="progress-left">
+                                     <span class="progress-bar"></span>
+                                 </span>
+                                 <span class="progress-right">
+                                     <span class="progress-bar"></span>
+                                 </span>
+                                 <div class="progress-value">90%</div>
+                             </div>
+                             <h4 style="font-weight: 300; font-size: 20px;line-height: 28px;
+                              color: #505558; text-align: center;margin-top: 20px;">Photoshop</h4>
+                         </div>
+                 
+                         <div class="col-md-3 col-sm-6">
+                             <div class="progress1 yellow">
+                                 <span class="progress-left">
+                                     <span class="progress-bar"></span>
+                                 </span>
+                                 <span class="progress-right">
+                                     <span class="progress-bar"></span>
+                                 </span>
+                                 <div class="progress-value">75%</div>
+                             </div>
+                             <h4 style="font-weight: 300; font-size: 20px;line-height: 28px;
+                              color: #505558; text-align: center;margin-top: 20px;">WordPress</h4>
+                         </div>
+                 
+                         <div class="col-md-3 col-sm-6">
+                             <div class="progress1 pink">
+                                 <span class="progress-left">
+                                     <span class="progress-bar"></span>
+                                 </span>
+                                 <span class="progress-right">
+                                     <span class="progress-bar"></span>
+                                 </span>
+                                 <div class="progress-value">60%</div>
+                             </div>
+                             <h4 style="font-weight: 300; font-size: 20px;line-height: 28px;
+                              color: #505558; text-align: center;margin-top: 20px;">SEO Services</h4>
+                         </div>
+                 
+                         <div class="col-md-3 col-sm-6">
+                             <div class="progress1 green">
+                                 <span class="progress-left">
+                                     <span class="progress-bar"></span>
+                                 </span>
+                                 <span class="progress-right">
+                                     <span class="progress-bar"></span>
+                                 </span>
+                                 <div class="progress-value">85%</div>
+                             </div>
+                             <h4 style="font-weight: 300; font-size: 20px;line-height: 28px;
+                              color: #505558; text-align: center;margin-top: 20px;">Awesomeness</h4>
+                         </div>
+                     </div>
+                 </div>
+               
+            <div class="container" style="margin: 0 auto;margin-top: 40px;">
+                <h3 class="feat-pric feat-knobs">Progress bars</h3>
+              <!--  进度条 -->
+              <div class="feat-jdtw"><p>Marketing</p><span>80%</span></div>
+              <div style="clear:both;"></div>
+              <div class="progress">
+                <div class="progress-bar bg-success d1" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="feat-jdtw"><p >Management</p><span>90%</span></div>
+              <div style="clear:both;"></div>
+              <div class="progress">
+                <div class="progress-bar bg-info d2" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="feat-jdtw"><p>Design</p><span>68%</span></div>
+              <div style="clear:both;"></div>
+              <div class="progress">
+                <div class="progress-bar bg-warning d3" role="progressbar" style="width: 68%" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="feat-jdtw"><p>Great ideas</p><span>100%</span></div>
+              <div style="clear:both;"></div>
+              <div class="progress">
+                <div class="progress-bar bg-primary d4" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <div class="feat-jdtw"><p>Awesomeness</p><span>100%</span></div>
+              <div style="clear:both;"></div>
+              <div class="progress">
+                <div class="progress-bar bg-danger d5" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+           <!-- Alert boxes -->
+            <div class="container" style="margin: 0 auto;margin-top: 40px; margin-bottom: 30px;">
+                <h3 class="feat-pric feat-knobs">Alert boxes</h3>
+                <div class="feat-abc">
+                    <div class="feat-abc-1 feat-abct">
+						Success! This is example of alert box
+                        <a class="feat-a" href="#">X</a>
+					</div>
+                    <div class="feat-abc-2  feat-abct">
+						Info! This is example of alert box
+						<a class="feat-a2"  href="#">X</a>
+                    </div>
+                    <div class="feat-abc-3  feat-abct">
+						Warning! This is example of alert box
+						<a class="feat-a3" href="#">X</a>
+                    </div>
+                    <div class="feat-abc-4  feat-abct">
+						Error! This is example of alert box
+						<a class="feat-a4"  href="#">X</a>
+                    </div>
+                </div> 
+            </div> 
+            <!-- 这是蓝色字和按钮 -->
+               <div class="container-fluid" style="background:#056AB2;width: 100%;">
+                    <div class="container row" style="margin: 0 auto;">
+                        <div class="col-sm-8">
+                          <h5 class="index-lah5">Ready to buy this theme? This is call to action</h5>
+                          <p class="index-la-p">
+            						Very easy to customize. Fully layered PSD with multi-purpose features. You can buy it right now
+            			  </p>
+                        </div>
+                        <div class="col-sm-4"><a class="index-la-a" href="#">Buy it now</a></div>
+                    </div>
+               </div>
+            <!-- 底部 -->
+               <div class="container-fluid" style="background: rgba(9, 16, 25,0.8); padding-bottom: 30px;">
+                   <div class="container row" style="margin: 0 auto;">
+                       <div class="col-sm-3">
+                           <h4 class="index-footerh4">About us</h4>
+                           <p class="index-foot-p">
+            					Dzen
+            					is a simple clean and modern PSD template for corporate/agency, 
+            					business and portfolio sites.  All layers are grouped and well organized
+            					– so it’s easy to modify. We possess within us two minds.
+            				</p>
+                       </div>
+                       <!-- 第二列 -->
+                       <div class="col-sm-3">
+                           <h4 class="index-footerh4">Recent posts</h4>
+                           <div class="index-foot-s" style="padding-top: 10px;">
+                               <a href="#" class="index-foot-sa"><img src="imgindex/blog2-1-150x150.jpg"></a>
+                               <a href="#" class="index-foot-sp"><p>Created especially for you</p></a>
+                           </div>
+                           <div class="index-foot-s">
+                               <a href="#" class="index-foot-sa"><img src="imgindex/item_0006.jpg"></a>
+                               <a href="#" class="index-foot-sp"><p>Created especially for you</p></a>
+                           </div>
+                           <div class="index-foot-s">
+                               <a href="#" class="index-foot-sa"><img src="imgindex/blog1-1-150x150.jpg"></a>
+                               <a href="#" class="index-foot-sp"><p>Created especially for you</p></a>
+                           </div>
+                       </div>
+                       <!-- 第三列 -->
+                       <div class="col-sm-3">
+                           <h4 class="index-footerh4">Stay in touch</h4>
+                           <div class="index-foot-z"><i class="fa fa-envelope-open-o" style="color: #F0F8FF;padding: 10px;" aria-hidden="true"></i>
+                           <a href="#" class="foot-za">hello@dzen.com</a>
+                           </div>
+                           <div class="index-foot-z"><i class="fa fa-home" style="color: #F0F8FF;padding: 10px;" aria-hidden="true"></i>
+                           <a href="#" class="foot-za">Little Lonsdale St. Talay</a>
+                           </div>
+                           <div class="index-foot-z"><i class="fa fa-tty" style="color: #F0F8FF;padding: 10px;" aria-hidden="true"></i>
+                           <a href="#" class="foot-za">+555 123 45 67 890</a>
+                           </div>
+                           <div class="index-foot-z"><i class="fa fa-globe" style="color: #F0F8FF;padding: 10px;" aria-hidden="true"></i>
+                           <a href="#" class="foot-za">Show on map</a>
+                           </div>
+                       </div>
+                       <!-- 第四列 -->
+                       <div class="col-sm-3">
+                           <h4 class="index-footerh4">Photos from Flickr</h4>
+                           <div class="foont-sl">
+                               <img src="imgindex/130.jpg" />
+                               <img src="imgindex/144.jpg" />
+                               <img src="imgindex/145.jpg" />
+                               <img src="imgindex/147.jpg" />
+                               <img src="imgindex/1478.jpg" />
+                               <img src="imgindex/14783.jpg" />
+                               
+                           </div>
+                           	
+                           </div>
+                       </div>
+                       
+                   </div>               
+        
+             <!--  备案 -->
+              <div class="container-fluid" style="background: rgba(9, 16, 25);">
+                 <div class="container row" style="margin: 0 auto;">
+                     <div class="col-sm-8">
+            			<p class="foot">&copy;2013, Dzen  inc., all rights reserved  |  Designed by Toxicus, developed by </p>
+                     </div>
+                     <div class="col-sm-4 footi"> <i class="fa fa-facebook-square" style="color: white; margin-right: 10px;"  aria-hidden="true"></i>
+                           <i class="fa fa-twitter" style="color: white; margin-right: 10px;" aria-hidden="true"></i>
+                          <i class="fa fa-facebook-square" style="color: white; margin-right: 10px;"  aria-hidden="true"></i>
+                     </div>
+              </div>
+            </div>
+        </div> 
+       
+	</body>
+</html>
