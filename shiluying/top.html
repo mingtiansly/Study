@@ -26,9 +26,9 @@
               .imgback:hover{
                   background-image: url(img/04.png);
               }
-              .dhz{
-                  display: none;
-              }
+             .dhz{
+                 display: none;
+             }
           </style>
           
 </head>
@@ -162,7 +162,7 @@
     
         </div>
         <div class="dh" style="width: 300px;height: 400px;background-color: #0099CC;
-         position: fixed; top:40%; left: 5%;" onclick="onc(this)">
+         position: fixed; top:40%; left: 5%;" onclick="di(this)">
          <div class="dhz" style="width: 300px;height: 400px;border: 1px solid #000000;
           position: fixed; top:50%; left: 50%;" ><input type="button" name="dj" value="关闭"/></div>
          </div>
@@ -183,17 +183,11 @@
             }
 </script> -->
         <script>
-           window.onload=function(){
-               console.log("juiju");
-               function onc(y){
-                   y.style.display="";
-                   console.log("cvbvbjuiju");
-                  var x=document.getElementsByClassName("dhz");
-                   x.style.display="block";
-               }
-               
-               
-           }
+          
+              function di(){
+                  document.getElementsByClassName("dhz").style.display="block";
+              }
+              
            
         </script>
     <input type="button" value="an" id="dingrr" />
