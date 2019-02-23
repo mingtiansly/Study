@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>FEATURES</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>特征</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet"  href="css/cont.css"/>
             <link rel="stylesheet" href="css/index.css" />
             <link rel="stylesheet" href="css/about.css" />
@@ -31,7 +31,7 @@
                           width: 100%;
                           height: 100%;
                           border-radius: 50%;
-                          border: 2px solid #fff;
+                         /* border: 2px solid #fff; */
                           position: absolute;
                           top: 0;
                           left: 0;
@@ -51,7 +51,7 @@
                           width: 100%;
                           height: 100%;
                           background: none;
-                          border-width: 2px;
+                          border-width: 10px;
                           border-style: solid;
                           position: absolute;
                           top: 0;
@@ -80,7 +80,7 @@
                           width: 85%;
                           height: 85%;
                           border-radius: 50%;
-                          border: 2px solid #ebebeb;
+                          /* border: 2px solid #ebebeb; */
                           font-size: 32px;
                           line-height: 125px;
                           text-align: center;
@@ -182,17 +182,17 @@
         </head>
         <body data-spy="scroll" data-target=".navbar" data-offset="50">
             <div class="container-fluid" style="padding-left: 0px;padding-right: 0px;">            
-              <div class="fixed-top" style=" width: 100%; height: 100px; background-color: #F0F8FF;" > 
+              <div class="fixed-top" style=" width: 100%; height: 100px; background-color:#f8f9fa;" > 
                 <div class="container  ">
                     <div class="col-4 index-img-1"><img src="imgindex/logo(1).png"  height="auto" class="img-fluid"/></div>
-                    <nav class="navbar navbar-expand-lg navbar-light col-8" style="float: right;
+                    <nav class="navbar navbar-expand-lg navbar-light  bg-light col-8" style="float: right;
                      position:relative; z-index: 1000;">
                         <button class="navbar-toggler  collapsed" type="button" data-toggle="collapse"
                          data-target="#collapsibleNavbar" aria-expanded="true" >
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse " id="collapsibleNavbar" style="width: 100%; z-index: 1000;">
-                            <ul class="navbar-nav nav-justified" style="width: 100%;">
+                            <ul class="navbar-nav" style="width: 100%;">
                                 <li class="nav-item ">
                                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                                 </li>
@@ -213,8 +213,9 @@
                                         </div>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" 
-                                    id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a class="nav-link dropdown-toggle" href="blog.html" 
+                                    id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" 
+                                    aria-haspopup="true" aria-expanded="false">
                                     Blog</a>
                     
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -225,7 +226,8 @@
                                 </li>
                                 <li class="nav-item dropdown active">
                                     <a class="nav-link dropdown-toggle" href="#" 
-                                        id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" 
+                                        aria-haspopup="true" aria-expanded="false">
                                     Features</a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <a class="dropdown-item" href="#">Action</a>
@@ -362,81 +364,93 @@
                <div class="hengxian-pric"></div>
                 <div class="row" style="margin-top: 30px;">
                     <div class="col-sm-6">
-                        <div class="accordion" id="accordionExample">
-                          <div class="card">
-                            <div class="card-header" id="headingOne">
-                              <h5 class="mb-0">
-                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                  Who we are?
-                                </button>
-                              </h5>
-                            </div>
+                        <!-- 折叠 -->
+                             <div class="accordion" id="accordionExample">
+                              <div class="card">
+                                <div class="card-header" id="headingOne">
+                                  <h5 class="mb-0 index-why-h5">
+                                    <span> Who we are?</span>
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                     data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                     +
+                                    </button>
+                                  </h5>
+                                </div>
                                                 
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                              <div class="card-body">
-                                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
-                                  nonumy eirmod tempor invidunt ut labore. Lorem ipsum dolor sit amet, 
-                                  consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
-                                  labore.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                                  nonumy eirmod tempor invidunt ut labore
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" 
+                                data-parent="#accordionExample">
+                                  <div class="card-body">
+                                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                                      nonumy eirmod tempor invidunt ut labore. Lorem ipsum dolor sit amet, 
+                                      consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+                                      labore.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                      nonumy eirmod tempor invidunt ut labore
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                  <h5 class="mb-0 index-why-h5">
+                                      <span> Our mission</span>
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                     data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                      +
+                                    </button>
+                                  </h5>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" 
+                                data-parent="#accordionExample">
+                                  <div class="card-body">
+                                       Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                                        nonumy eirmod tempor invidunt ut labore. Lorem ipsum dolor sit amet, 
+                                        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+                                        labore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
+                                        diam nonumy.
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card">
+                                <div class="card-header" id="headingThree">
+                                  <h5 class="mb-0 index-why-h5">
+                                      <span> skills</span>
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                     data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                     +
+                                    </button>
+                                  </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" 
+                                data-parent="#accordionExample">
+                                  <div class="card-body">
+                                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                                        nonumy eirmod tempor invidunt ut labore. Lorem ipsum dolor sit amet, 
+                                        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+                                        labore.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                        nonumy eirmod tempor invidunt ut labore.
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                          </div>
-                          <div class="card">
-                            <div class="card-header" id="headingTwo">
-                              <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                  Our mission
-                                </button>
-                              </h5>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                              <div class="card-body">
-                                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
-                                    nonumy eirmod tempor invidunt ut labore. Lorem ipsum dolor sit amet, 
-                                    consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
-                                    labore. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed 
-                                    diam nonumy.
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card">
-                            <div class="card-header" id="headingThree">
-                              <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                 Our skills
-                                </button>
-                              </h5>
-                            </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                              <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
-                                    nonumy eirmod tempor invidunt ut labore. Lorem ipsum dolor sit amet, 
-                                    consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
-                                    labore.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                                    nonumy eirmod tempor invidunt ut labore.
-                              </div>
-                            </div>
-                          </div>
-                        </div>
                     </div>
                     <div class="col-sm-6">
                         <div class="ser-our">
                             <div class="ser-our-top">
                                 <ul class="nav">
-                                    <li class="col-md-4 nav-item ser-our-top1  active"><a  href="#" data-toggle="pill">What we do</a></li>
-                                    <li class="col-md-4 nav-item ser-our-top2"><a href="#bottom1" data-toggle="pill">Why we do it</a></li>
-                                    <li class="col-md-4 nav-item ser-our-top3"><a href="#bottom1" data-toggle="pill">How we do it</a></li>
+                                    <li class="col-md-4 nav-item ser-our-top1  active"><a  href="#" data-toggle="pill">                                         What we do</a></li>
+                                    <li class="col-md-4 nav-item ser-our-top2"><a href="#bottom1" data-toggle="pill">
+                                    Why we do it</a></li>
+                                    <li class="col-md-4 nav-item ser-our-top3"><a href="#bottom1" data-toggle="pill">
+                                    How we do it</a></li>
                                 </ul>
                             </div>
                             <div class="ser-our-bottom" id="bottom1">
                                 <p class="ser-our-bp1">
-                        								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
-                        								nonumy eirmod tempor invidunt ut labore. Lorem ipsum dolor sit amet, 
-                        								consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
-                        								labore.
-                        								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
-                        								nonumy eirmod tempor invidunt ut labore. Lorem ipsum dolor sit amet.
+                        			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                        			nonumy eirmod tempor invidunt ut labore. Lorem ipsum dolor sit amet, 
+                        			consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+                        			labore.
+                        			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                        			nonumy eirmod tempor invidunt ut labore. Lorem ipsum dolor sit amet.
                                 </p>
                                 <p class="ser-our-bp2">
                                 	<!-- Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
@@ -543,9 +557,9 @@
                </div>
                 <div class="clear"></div>
                 <div class="fea-bt-top">
-                    <a href="#" class="featbt-a2 featbt-4a" style="margin-top: 20px;border-radius: 20px;">Rounded</a>
-                    <a href="#" class="featbt-a3 featbt-3a" style="margin-top: 17px;border-radius: 30px;">Rounded</a>
-                    <a href="#" class="featbt-a5 featbt-aa" style="margin-top: 14px;border-radius: 40px;">Rounded</a>
+                    <a href="#" class="featbt-a2 featbt-4a" style="margin-top: 27px;border-radius: 20px;">Rounded</a>
+                    <a href="#" class="featbt-a3 featbt-3a" style="margin-top: 24px;border-radius: 30px;">Rounded</a>
+                    <a href="#" class="featbt-a5 featbt-aa" style="margin-top: 16px;border-radius: 40px;">Rounded</a>
                     <a href="#" class="featbt-a6 featbt-a" style="border-radius: 50px;">Rounded</a>
                 </div>
                  <div class="clear"></div>
@@ -711,27 +725,32 @@
               <div class="feat-jdtw"><p>Marketing</p><span>80%</span></div>
               <div style="clear:both;"></div>
               <div class="progress">
-                <div class="progress-bar bg-success d1" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-success d1" role="progressbar" style="width: 80%" aria-valuenow="80" 
+                aria-valuemin="0" aria-valuemax="100"></div>
               </div>
               <div class="feat-jdtw"><p >Management</p><span>90%</span></div>
               <div style="clear:both;"></div>
               <div class="progress">
-                <div class="progress-bar bg-info d2" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-info d2" role="progressbar" style="width: 90%" aria-valuenow="90" 
+                aria-valuemin="0" aria-valuemax="100"></div>
               </div>
               <div class="feat-jdtw"><p>Design</p><span>68%</span></div>
               <div style="clear:both;"></div>
               <div class="progress">
-                <div class="progress-bar bg-warning d3" role="progressbar" style="width: 68%" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-warning d3" role="progressbar" style="width: 68%" aria-valuenow="68" 
+                aria-valuemin="0" aria-valuemax="100"></div>
               </div>
               <div class="feat-jdtw"><p>Great ideas</p><span>100%</span></div>
               <div style="clear:both;"></div>
               <div class="progress">
-                <div class="progress-bar bg-primary d4" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-primary d4" role="progressbar" style="width: 100%" aria-valuenow="100" 
+                aria-valuemin="0" aria-valuemax="100"></div>
               </div>
               <div class="feat-jdtw"><p>Awesomeness</p><span>100%</span></div>
               <div style="clear:both;"></div>
               <div class="progress">
-                <div class="progress-bar bg-danger d5" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-danger d5" role="progressbar" style="width: 100%" aria-valuenow="100" 
+                aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
            <!-- Alert boxes -->
@@ -758,11 +777,12 @@
             </div> 
             <!-- 这是蓝色字和按钮 -->
                <div class="container-fluid" style="background:#056AB2;width: 100%;">
-                    <div class="container row" style="margin: 0 auto;">
+                    <div class="container row" style="margin: 0 auto;padding-bottom: 30px;">
                         <div class="col-sm-8">
                           <h5 class="index-lah5">Ready to buy this theme? This is call to action</h5>
                           <p class="index-la-p">
-            						Very easy to customize. Fully layered PSD with multi-purpose features. You can buy it right now
+            						Very easy to customize. Fully layered PSD with multi-purpose features.
+                                     You can buy it right now
             			  </p>
                         </div>
                         <div class="col-sm-4"><a class="index-la-a" href="#">Buy it now</a></div>
@@ -799,16 +819,20 @@
                        <!-- 第三列 -->
                        <div class="col-sm-3">
                            <h4 class="index-footerh4">Stay in touch</h4>
-                           <div class="index-foot-z"><i class="fa fa-envelope-open-o" style="color: #F0F8FF;padding: 10px;" aria-hidden="true"></i>
+                           <div class="index-foot-z"><i class="fa fa-envelope-open-o" style="color: #F0F8FF;
+                           padding: 10px;" aria-hidden="true"></i>
                            <a href="#" class="foot-za">hello@dzen.com</a>
                            </div>
-                           <div class="index-foot-z"><i class="fa fa-home" style="color: #F0F8FF;padding: 10px;" aria-hidden="true"></i>
+                           <div class="index-foot-z"><i class="fa fa-home" style="color: #F0F8FF;padding: 10px;" 
+                           aria-hidden="true"></i>
                            <a href="#" class="foot-za">Little Lonsdale St. Talay</a>
                            </div>
-                           <div class="index-foot-z"><i class="fa fa-tty" style="color: #F0F8FF;padding: 10px;" aria-hidden="true"></i>
+                           <div class="index-foot-z"><i class="fa fa-tty" style="color: #F0F8FF;padding: 10px;" 
+                           aria-hidden="true"></i>
                            <a href="#" class="foot-za">+555 123 45 67 890</a>
                            </div>
-                           <div class="index-foot-z"><i class="fa fa-globe" style="color: #F0F8FF;padding: 10px;" aria-hidden="true"></i>
+                           <div class="index-foot-z"><i class="fa fa-globe" style="color: #F0F8FF;padding: 10px;" 
+                           aria-hidden="true"></i>
                            <a href="#" class="foot-za">Show on map</a>
                            </div>
                        </div>
@@ -816,12 +840,12 @@
                        <div class="col-sm-3">
                            <h4 class="index-footerh4">Photos from Flickr</h4>
                            <div class="foont-sl">
-                               <img src="imgindex/130.jpg" />
-                               <img src="imgindex/144.jpg" />
-                               <img src="imgindex/145.jpg" />
-                               <img src="imgindex/147.jpg" />
-                               <img src="imgindex/1478.jpg" />
-                               <img src="imgindex/14783.jpg" />
+                               <img class="tran" src="imgindex/130.jpg" />
+                               <img class="tran" src="imgindex/144.jpg" />
+                               <img class="tran" src="imgindex/145.jpg" />
+                               <img class="tran" src="imgindex/147.jpg" />
+                               <img class="tran" src="imgindex/1478.jpg" />
+                               <img class="tran" src="imgindex/14783.jpg" />
                                
                            </div>
                            	
@@ -834,11 +858,14 @@
               <div class="container-fluid" style="background: rgba(9, 16, 25);">
                  <div class="container row" style="margin: 0 auto;">
                      <div class="col-sm-8">
-            			<p class="foot">&copy;2013, Dzen  inc., all rights reserved  |  Designed by Toxicus, developed by </p>
+            			<p class="foot">&copy;2013, Dzen  inc., all rights reserved  |  Designed by Toxicus, 
+                        developed by </p>
                      </div>
-                     <div class="col-sm-4 footi"> <i class="fa fa-facebook-square" style="color: white; margin-right: 10px;"  aria-hidden="true"></i>
+                     <div class="col-sm-4 footi"> <i class="fa fa-facebook-square" style="color: white; 
+                     margin-right: 10px;"  aria-hidden="true"></i>
                            <i class="fa fa-twitter" style="color: white; margin-right: 10px;" aria-hidden="true"></i>
-                          <i class="fa fa-facebook-square" style="color: white; margin-right: 10px;"  aria-hidden="true"></i>
+                          <i class="fa fa-facebook-square" style="color: white; margin-right: 10px;" 
+                           aria-hidden="true"></i>
                      </div>
               </div>
             </div>

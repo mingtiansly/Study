@@ -16,17 +16,17 @@
 	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
         <div class="container-fluid" style="padding-left: 0px;padding-right: 0px;">            
-          <div class="fixed-top" style=" width: 100%; height: 100px; background-color: #F0F8FF;" > 
+          <div class="fixed-top" style=" width: 100%; height: 100px; background-color:#f8f9fa;" > 
             <div class="container  ">
                 <div class="col-4 index-img-1"><img src="imgindex/logo(1).png"  height="auto" class="img-fluid"/></div>
-                <nav class="navbar navbar-expand-lg navbar-light col-8" style="float: right;
+                <nav class="navbar navbar-expand-lg navbar-light bg-light col-8" style="float: right;
                  position:relative; z-index: 1000;">
                     <button class="navbar-toggler  collapsed" type="button" data-toggle="collapse"
                      data-target="#collapsibleNavbar" aria-expanded="true" >
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse " id="collapsibleNavbar" style="width: 100%; z-index: 1000;">
-                        <ul class="navbar-nav nav-justified" style="width: 100%;">
+                        <ul class="navbar-nav" style="width: 100%;">
                             <li class="nav-item">
                                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                             </li>
@@ -47,7 +47,7 @@
                                     </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" 
+                                <a class="nav-link dropdown-toggle" href="blog.html" 
                                 id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Blog</a>
                 
@@ -114,7 +114,7 @@
                  <div class="form-group">
                    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="YOUR MESSAGE " rows="3"></textarea>
                  </div>
-                 <button class="btn btn-primary btn-lg" type="submit">send</button>
+                 <button class="btn btn-primary btn-lg " id="mybtn" onclick="myfunction()" type="button">send</button>
                </form>
            </div>
            <div class="col-sm-6">
@@ -122,8 +122,8 @@
                    <div class="index-why1"> Contact info</div>
                    <div class="hengxian1"></div>
                </div>
-               <div class="zhong">
-                   <div class="zuo">
+               <div class="zhong row">
+                   <div class="zuo col-sm-6">
                        <div class="cont-zuo"><i class="fa fa-envelope-open-o" style="color:grey;padding: 8px;" aria-hidden="true"></i>
                        <a href="#" class="foot-za">hello@dzen.com</a>
                        </div>
@@ -134,7 +134,7 @@
                            <a href="#" class="foot-za">+555 123 45 67 890</a>
                        </div>
                    </div>
-                   <div class="you">
+                   <div class="you  col-sm-6">
                         <div class="cont-zuo"><i class="fa fa-globe" style="color:grey;padding: 8px;" aria-hidden="true"></i>
                            <a href="#" class="foot-za">Show on map</a></div>
                         <div class="cont-zuo"><i class="fa fa-file-text" style="color:grey;padding: 8px;" aria-hidden="true"></i>
@@ -147,26 +147,26 @@
                    <div class="hengxian1" style="margin-bottom: 20px;"></div>   
                    <div class="xia-xiao">
                        <i class="fa fa-twitter" style="color:grey;padding: 8px;" aria-hidden="true">
-                           <p>guanyutadejieshao</p>
+                           <p class="tran">guanyutadejieshao</p>
                        </i>
                        <i class="fa fa-facebook-square" style="color:grey;padding: 8px;" aria-hidden="true">
                            <p>guanyutadejieshao</p>
                        </i>
                        <i class="fa fa-linkedin-square" style="color:grey;padding: 8px;" aria-hidden="true">
-                           <p>guanyutadejieshao</p>
+                           <p class="tran">guanyutadejieshao</p>
                        </i>
                        <i class="fa fa-vimeo-square" style="color:grey;padding: 8px;" aria-hidden="true">
-                           <p>guanyutadejieshao</p>
+                           <p class="tran">guanyutadejieshao</p>
                        </i>
                        <i class="fa fa-youtube-play" style="color:grey;padding: 8px;" aria-hidden="true">
-                           <p>guanyutadejieshao</p>
+                           <p class="tran">guanyutadejieshao</p>
                        </i>
                    </div>
                </div>
            </div>
           <!--  按钮 -->
            </div>
-            <div class="container row" style="margin: 0 auto; margin-top: 20px;">
+            <div class="container row" style="margin: 0 auto; margin-top: 70px;">
                <div class="col-sm-8">
                  <h5 class="cont-h5">Ready to buy this theme? This is call to action</h5>
                  <p class="cont-p">
@@ -224,13 +224,12 @@
                       <div class="col-sm-3">
                           <h4 class="index-footerh4">Photos from Flickr</h4>
                           <div class="foont-sl">
-                              <img src="imgindex/130.jpg" />
-                              <img src="imgindex/144.jpg" />
-                              <img src="imgindex/145.jpg" />
-                              <img src="imgindex/147.jpg" />
-                              <img src="imgindex/1478.jpg" />
-                              <img src="imgindex/14783.jpg" />
-                              
+                               <img class="tran" src="imgindex/130.jpg" />
+                              <img class="tran" src="imgindex/144.jpg" />
+                              <img class="tran" src="imgindex/145.jpg" />
+                              <img class="tran" src="imgindex/147.jpg" />
+                              <img class="tran" src="imgindex/1478.jpg" />
+                              <img class="tran" src="imgindex/14783.jpg" />
                           </div>
                           	
                           </div>
@@ -252,5 +251,14 @@
            </div>
            
         </div>
+        
+        <script>
+            function myfunction(){
+                var y=document.getElementById("mybtn");
+                y.innerHTML="sending";
+            }
+        </script>
+        
+        
 	</body>
 </html>

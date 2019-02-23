@@ -6,8 +6,15 @@
      width: 100%;
       position: relative; 
   }
+.navbar{
+    flex-direction: row-reverse;
+}
+
 ul li:hover .dropdown-menu {
     display: block;  /* 使导航中的下拉菜单是移入出现的 */
+ }
+ .tran{
+     transition: all 1s ease;
  }
   .clear{
       clear: both;
@@ -21,33 +28,33 @@ ul li:hover .dropdown-menu {
   	100%  {width: 80%;}
   }
 .d2{               
-   animation:myfirst 8s;
+   animation:myfirst1 8s;
 }
-@-webkit-keyframes myfirst /* Safari and Chrome */
+@-webkit-keyframes myfirst1 /* Safari and Chrome */
   {
   	0%   {width:0%;}
   	100%  {width: 90%;}
  }
 .d3{               
-   animation:myfirst 8s;
+   animation:myfirst2 8s;
 }
-@-webkit-keyframes myfirst /* Safari and Chrome */
+@-webkit-keyframes myfirst2 /* Safari and Chrome */
   {
   	0%   {width:0%;}
   	100%  {width:68%;}
   }
 .d4{               
-   animation:myfirst 8s;
+   animation:myfirst3 8s;
 }
-@-webkit-keyframes myfirst /* Safari and Chrome */
+@-webkit-keyframes myfirst3 /* Safari and Chrome */
   {
   	0%   {width:0%;}
   	100%  {width: 100%;}
  }
 .d5{               
-   animation:myfirst 8s;
+   animation:myfirst4 8s;
 }
-@-webkit-keyframes myfirst /* Safari and Chrome */
+@-webkit-keyframes myfirst4 /* Safari and Chrome */
   {
   	0%   {width:0%;}
   	100%  {width: 100%;}
@@ -84,7 +91,7 @@ ul li:hover .dropdown-menu {
      margin-left: 1px;
     
  }
- .index-xiaof:hover{
+ .index-xiaoa:hover i{
      color: aliceblue;
 }
 .index-xiaoa-1{
@@ -135,6 +142,20 @@ ul li:hover .dropdown-menu {
     margin-top: 15px;
     
 }
+.index-why-h5{
+    font-size: 16px;
+    color: grey;
+}
+.index-why-h5 span{
+    float: left;
+}
+.index-why-h5 button{
+    float: right;
+    margin: -10px;
+}
+.index-why-h5 button:hover{
+    text-decoration: none;
+}
 .index-jdtw{
     margin:15px;
 }
@@ -169,23 +190,21 @@ ul li:hover .dropdown-menu {
     color: #F0F8FF;
 }
 .index-owtua{
-    display: none;
+   position: absolute;
+   top:0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   text-align: center;
 }
 .ss{
     margin-top: 10px;
 }
 .ss:hover .index-owtua{
-    display: block;
-    position: absolute;
-    top:0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
+    opacity: 1;
     background:rgba(0, 0, 0,0.6);
-    text-align: center;
     overflow: hidden;
-    
-    
     }
  .index-owan{
      margin: 0 auto;
@@ -226,18 +245,23 @@ ul li:hover .dropdown-menu {
  }
  
  .index-mot-h4 p{
-      display: none;
-  }
-  .index-mot-h4:hover p{
-      display: block;
-      position: absolute;
+      /* display: none; */
+       position: absolute;
       top: 0px;
       left: 0px;
       width: 100%;
       height: 100%;
       border-radius: 50%;
+      opacity: 0;
+      transition:all 1s ease;
+  }
+  .index-mot-h4:hover p{
+      /* display: block; */
+      
+     
       overflow: hidden;
       background:rgba(2, 41, 80,0.6);
+      opacity: 1;
   }
 .index-i{
     color: #F0F8FF;
@@ -282,7 +306,7 @@ ul li:hover .dropdown-menu {
      height: 50px;
      background-color: beige;
      border-radius: 10px;
-     margin: 0 auto;
+     
      text-align: center;
      padding-top: 10px;
      margin-top: 50px;
@@ -339,6 +363,13 @@ ul li:hover .dropdown-menu {
  .foont-sl{
      padding-top: 10px;
  }
+ .foont-sl img{
+     
+     margin-top: 3px;
+ }
+ .foont-sl img:hover{
+      opacity: 0.4;
+  }
  .foot{
      
      color: #F5F5DC;

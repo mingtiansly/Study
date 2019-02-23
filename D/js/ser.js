@@ -29,39 +29,45 @@ $(document).ready(function(){
 /* 首页图片切换 */
 $(document).ready(function(){
    $(".owul1").click(function(){
-      $("#owtu1").slideToggle("slow");
-      $("#owtu2").slideToggle("slow");
-      $("#owtu3").slideToggle("slow");
-      $("#owtu4").slideToggle("slow");
-      $("#owtu5").slideToggle("slow");
-      $("#owtu6").slideToggle("slow");
-      $("#owtu7").slideToggle("slow");
-      $("#owtu8").slideToggle("slow");
+      $(".owtu1").fadeIn("slow");
+      $(".owtu2").fadeIn("slow");
+      $(".owtu3").fadeIn("slow");
+      $(".owtu4").fadeIn("slow");
+      $(".owtu5").fadeIn("slow");
+      
      
     })  ;
    $(".owul2").click(function(){
-      $("#owtu3").slideToggle("slow");
-      $("#owtu4").slideToggle("slow");
-      $("#owtu5").slideToggle("slow");
-      $("#owtu6").slideToggle("slow");
+      $(".owtu3").slideUp("slow");
+      $(".owtu4").slideUp("slow");
+      $(".owtu5").slideUp("slow");
+      $(".owtu2").slideUp("slow");
+      $(".owtu1").fadeIn("slow");
    }) ;
    $(".owul3").click(function(){
-     $("#owtu2").slideToggle("slow");
-     $("#owtu5").slideToggle("slow");
-     $("#owtu6").slideToggle("slow");
-     $("#owtu7").slideToggle("slow");
-     $("#owtu8").slideToggle("slow");
+     $(".owtu2").fadeIn("slow");
+     $(".owtu1").slideUp("slow");
+     $(".owtu3").slideUp("slow");
+     $(".owtu4").slideUp("slow");
+     $(".owtu5").fadeIn("slow");
    }) ;
    $(".owul4").click(function(){
-     $("#owtu3").slideToggle("slow");
-     $("#owtu4").slideToggle("slow");
-     $("#owtu5").slideToggle("slow");
-     $("#owtu6").slideToggle("slow");
+     $(".owtu1").slideUp("slow");
+     $(".owtu2").slideUp("slow");
+     $(".owtu3").fadeIn("slow");
+     $(".owtu4").fadeIn("slow");
+     $(".owtu5").slideUp("slow");
    }) ;
    $(".owul5").click(function(){
-     $("#owtu4").slideToggle("slow");
-     $("#owtu3").slideToggle("slow");
+    $(".owtu1").fadeIn("slow");
+    $(".owtu2").slideUp("slow");
+    $(".owtu3").slideUp("slow");
+    $(".owtu4").slideUp("slow");
+    $(".owtu5").fadeIn("slow");
    }) ;
+   
+   
+   
    
   /* 第二子页数字增长 */
   
@@ -83,7 +89,7 @@ $(document).ready(function(){
             }else {
              		golb = requestAnimationFrame(numSlideFun);
                   }
-            numBox.innerHTML = ~~(numText)
+            numBox.innerHTML = ~~(numText);
             }
              numSlideFun();
         }
@@ -159,7 +165,7 @@ $(document).ready(function(){
                 }else {
                     golb = requestAnimationFrame(numSlideFun);
                 }
-                numBox3.innerHTML = ~~(numText)
+                numBox3.innerHTML = ~~(numText);
                         		
              }
                  numSlideFun();

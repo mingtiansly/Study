@@ -10,23 +10,23 @@
         <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
         <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
-        <script src="js/ser.js"></script>
+        <script src="js/INDEX.js"></script>
         <script src="js/about.js"></script>
         
 	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
         <div class="container-fluid" style="background-color: rgb(242, 243, 244);padding-left: 0px;padding-right: 0px;">            
-          <div class=" fixed-top" style=" width: 100%; height: 100px; background-color: #F0F8FF;" > 
+          <div class=" fixed-top" style=" width: 100%; height: 70px; background-color:#f8f9fa;" > 
             <div class="container ">
                 <div class="col-4 index-img-1"><img src="imgindex/logo(1).png"  height="auto" class="img-fluid"/></div>
-                <nav class="navbar navbar-expand-lg navbar-light col-8" style="float: right;
-                background: rgba(0,0,0,0); position:relative; z-index: 1000;">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light col-8" style="float: right;
+                 position:relative; z-index: 1000;">
                     <button class="navbar-toggler  collapsed" type="button" data-toggle="collapse"
                      data-target="#collapsibleNavbar" aria-expanded="true" >
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse " id="collapsibleNavbar" style="width: 100%; z-index: 1000;">
-                        <ul class="navbar-nav nav-justified" style="width: 100%;">
+                        <ul class="navbar-nav mr-auto " style="width: 100%;">
                             <li class="nav-item active">
                                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                             </li>
@@ -37,17 +37,16 @@
                                 <a class="nav-link" href="About.html">About us</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="Portfolio.html" 
-                                id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
-                                 aria-haspopup="true" aria-expanded="false">  Portfolio</a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="Portfolio.html" >  Portfolio</a>
+                                    <div class="dropdown-menu">
                                     <a class="dropdown-item" href="#">Action</a>
                                     <a class="dropdown-item" href="#">Another action</a>
                                     <a class="dropdown-item" href="#">Something else here</a>
                                     </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" 
+                                <a class="nav-link dropdown-toggle " href="blog.html" 
                                 id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Blog</a>
                 
@@ -58,7 +57,7 @@
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="Features.html" 
+                                <a class="nav-link  dropdown-toggle " href="Features.html" 
                                     id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Features</a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -155,9 +154,10 @@
                                <div class="accordion" id="accordionExample">
                                 <div class="card">
                                   <div class="card-header" id="headingOne">
-                                    <h5 class="mb-0">
+                                    <h5 class="mb-0 index-why-h5">
+                                      <span> Who we are?</span>
                                       <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Who we are?
+                                       +
                                       </button>
                                     </h5>
                                   </div>
@@ -174,9 +174,10 @@
                                 </div>
                                 <div class="card">
                                   <div class="card-header" id="headingTwo">
-                                    <h5 class="mb-0">
+                                    <h5 class="mb-0 index-why-h5">
+                                        <span> Our mission</span>
                                       <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Our mission
+                                        +
                                       </button>
                                     </h5>
                                   </div>
@@ -192,9 +193,10 @@
                                 </div>
                                 <div class="card">
                                   <div class="card-header" id="headingThree">
-                                    <h5 class="mb-0">
+                                    <h5 class="mb-0 index-why-h5">
+                                        <span> skills</span>
                                       <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                       Our skills
+                                       +
                                       </button>
                                     </h5>
                                   </div>
@@ -275,32 +277,33 @@
                      </div>
                      <div class="index-owtu container row owtu" style="margin: 0 auto; text-align: center;" >
                        
-                       <div class="col-sm-3 ss" id="owtu1" style="padding-left: 1px; padding-right: 1px;"><img class="img-responsive"  src="imgindex/item_0004.jpg"/>
-                       <a class="index-owtua"><p>Mountain Paradise</p></a>
+                       <div class="col-sm-3 owtu1 owtu3 ss"  style="padding-left: 1px; padding-right: 1px;"><img class="img-responsive"  src="imgindex/item_0004.jpg"/>
+                       <a class="index-owtua tran"><p>Mountain Paradise</p></a>
                        </div>
-                       <div class="col-sm-3 ss" id="owtu2" style="padding-left: 1px; padding-right: 1px;"><img class="img-responsive"  src="imgindex/item.jpg"/>
-                       <a class="index-owtua"><p>Mountain Paradise</p></a>
+                       <div class="col-sm-3 owtu2 owtu4 ss"  style="padding-left: 1px; padding-right: 1px;"><img class="img-responsive"  src="imgindex/item.jpg"/>
+                       <a class="index-owtua  tran"><p>Mountain Paradise</p></a>
                        </div>
-                       <div class="col-sm-3 ss" id="owtu3" style="padding-left: 1px; padding-right: 1px;"><img class="img-responsive"  src="imgindex/item_0000.jpg"/>
-                       <a class="index-owtua"><p>Mountain Paradise</p></a></div>
-                       <div class="col-sm-3 ss" id="owtu4" style="padding-left: 1px; padding-right: 1px;"><img class="img-responsive"  src="imgindex/item_0001.jpg"/>
-                       <a class="index-owtua"><p>Mountain Paradise</p></a></div>
-                       <div class="col-sm-3 ss"  id="owtu5" style="padding-left: 1px; padding-right: 1px;"><img class="img-responsive"  src="imgindex/item_0002.jpg"/>
-                       <a class="index-owtua"><p>Mountain Paradise</p></a>
+                       <div class="col-sm-3 owtu2 owtu5 ss" style="padding-left: 1px; padding-right: 1px;"><img class="img-responsive"  src="imgindex/item_0000.jpg"/>
+                       <a class="index-owtua  tran"><p>Mountain Paradise</p></a></div>
+                       <div class="col-sm-3 owtu4  owtu5 ss"  style="padding-left: 1px; padding-right: 1px;"><img class="img-responsive"  src="imgindex/item_0001.jpg"/>
+                       <a class="index-owtua  tran"><p>Mountain Paradise</p></a></div>
+                       <!-- <div class="w-100"></div> -->
+                       <div class="col-sm-3 owtu1 owtu3 ss" style="padding-left: 1px; padding-right: 1px;"><img class="img-responsive"  src="imgindex/item_0002.jpg"/>
+                       <a class="index-owtua  tran"><p>Mountain Paradise</p></a>
                        </div>
-                       <div class="col-sm-3 ss" id="owtu6" style="padding-left: 1px; padding-right: 1px;"><img class="img-responsive"  src="imgindex/item_0003.jpg"/>
-                       <a class="index-owtua"><p>Mountain Paradise</p></a>
+                       <div class="col-sm-3 owtu2 owtu4 ss" style="padding-left: 1px; padding-right: 1px;"><img class="img-responsive"  src="imgindex/item_0003.jpg"/>
+                       <a class="index-owtua  tran"><p>Mountain Paradise</p></a>
                        </div>
-                       <div class="col-sm-3 ss" id="owtu7" style="padding-left: 1px; padding-right: 1px;"><img class="img-responsive"  src="imgindex/item_0005.jpg"/>
-                       <a class="index-owtua "><p>Mountain Paradise</p></a>
+                       <div class="col-sm-3 owtu3 ss"  style="padding-left: 1px; padding-right: 1px;"><img class="img-responsive"  src="imgindex/item_0005.jpg"/>
+                       <a class="index-owtua  tran"><p>Mountain Paradise</p></a>
                        </div>
-                       <div class="col-sm-3 ss" id="owtu8" style="padding-left: 1px; padding-right: 1px;"><img class="img-responsive"  src="imgindex/item_0004.jpg"/>
-                       <a class="index-owtua"><p>Mountain Paradise</p></a>
+                       <div class="col-sm-3 owtu1 owtu4 ss" style="padding-left: 1px; padding-right: 1px;"><img class="img-responsive"  src="imgindex/item_0004.jpg"/>
+                       <a class="index-owtua  tran"><p>Mountain Paradise</p></a>
                        </div> 
            
                     </div>
                     
-                    
+                   
                     <div class="index-owan"><a href="#">Complete portfolio</a></div>
                     
              </div>
@@ -328,7 +331,7 @@
                     <div class="container row" style="padding-top: 30px; margin: 0 auto;">   
                      <div class="col-sm-3">
                          <h4 class="index-mot-h4"><img src="imgindex/item_0003_Layer-1.jpg"/>
-                         <p><i class="fa fa-twitter" style="color: white; margin-right: 10px;" aria-hidden="true"></i>
+                         <p class="index-mot-p"><i class="fa fa-twitter" style="color: white; margin-right: 10px;" aria-hidden="true"></i>
                              <i class="fa fa-facebook index-i" aria-hidden="true"></i></p>
                          </h4>
                          <a href="#" class="index-xiaoa-1">Tons of shortcodes</a>
@@ -486,12 +489,12 @@
                        <div class="col-sm-3">
                            <h4 class="index-footerh4">Photos from Flickr</h4>
                            <div class="foont-sl">
-                               <img src="imgindex/130.jpg" />
-                               <img src="imgindex/144.jpg" />
-                               <img src="imgindex/145.jpg" />
-                               <img src="imgindex/147.jpg" />
-                               <img src="imgindex/1478.jpg" />
-                               <img src="imgindex/14783.jpg" />
+                               <img class="tran" src="imgindex/130.jpg" />
+                               <img class="tran" src="imgindex/144.jpg" />
+                               <img class="tran" src="imgindex/145.jpg" />
+                               <img class="tran" src="imgindex/147.jpg" />
+                               <img class="tran" src="imgindex/1478.jpg" />
+                               <img class="tran" src="imgindex/14783.jpg" />
                                
                            </div>
                            	
