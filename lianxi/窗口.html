@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+        <div id="div1">
+        	
+        </div>
+        <script>
+            window.onresize = function(){
+                /* 浏览器的宽 */
+                var w = document.documentElement.clientWidth;
+                /* 浏览器的高 */
+                var h = document.documentElement.clientHeight;
+                div1.innerHTML = w+ " ，"+h;
+            }
+        </script>
+	</body>
+</html>
