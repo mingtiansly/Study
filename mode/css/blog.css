@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.blog-all-h2{
+    padding-top: 20px;
+    border-bottom: 1px solid #CCCCCC;
+}
+.blog-all-h2::after{
+    content: "";
+    width: 150px;
+    height: 3px;
+   background-color: firebrick;
+   display: block;
+   margin-top: 25px;
+}
+.blog-all-left{
+    background-color: white;
+    padding: 2px;
+    position: relative;
+    overflow: hidden;
+}
+.blog-all-img{
+    border: #F1F1F1 5px solid;
+}
+.blog-all-tu{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color:white;
+    opacity: 0;
+    transform: rotate3d(0,0,1,45deg) translate3d(0,-130%,0) scale3d(1.5,1.9,1);
+    
+}
+.blog-all-left:hover .blog-all-tu{
+    display: block;
+    transition: 0.2s;
+    opacity: 0.4;
+    transform: rotate3d(0,0,1,45deg) translate3d(0,100%,0) scale3d(1.9,1,1);
+}
+.blog-lf-fy{
+    text-align: center;
+}
+.blog-lf-fy a{
+    padding: 8px 10px;
+    color:black;
+    border: 1px solid #808080;
+}
+.blog-lf-fy a:hover{
+    color: white;
+    text-decoration: none;
+    background-color: #E74C3C;
+}
+.col-all-right{
+    padding:30px 10px 10px 10px;
+    background-color: white;
+     border: 5px solid azure;
+}
+
+.col-all-right h3 i{
+    color: #007AFF;
+}
+.col-all-right h3{
+    color: #2F2E2E;
+    font-size: 22px;
+}
+.col-all-right h3 a{
+    color: #2F2E2E;
+    margin-left: 8px;
+}
+.col-all-right h3 a:hover{
+    text-decoration: none;
+    color: #1D5EA5;
+}
+.col-all-right span{
+    font-size: 14px;
+}
+.col-all-right span i{
+   color: grey;
+}
+.col-all-right span a{
+    color: grey;
+    margin: 5px;
+   
+
+}
+.col-all-right span a:hover{
+text-decoration: none;
+color: #1D5EA5;
+}
+.col-all-right p{
+    color: grey;
+    margin: 15px 0px;
+}
+.col-all-right p a{
+    padding: 8px 12px;
+    border: 2px solid black;
+    color: grey;
+     border-radius: 3px;
+
+}
+.col-all-right p a:hover{
+    text-decoration: none;
+    background-color: #1D5EA5;
+    color: white;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+.col-all-right p a:hover i{
+    color: white;
+}
+.col-all-right p a i{
+    color: grey;
+    margin-left: 5px;
+}
+.blog-all-con{
+    margin: 20px 0px;
+}
+.blog-right-input{
+    padding: 5px;
+    width: 100%;
+}
+.blog-right-but{
+    background-color: #007AFF;
+    padding: 5px 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.blog-right-h3{
+    font-weight: 400;
+    margin-top: 10px;
+    color: #2F2E2E;
+}
+.blog-rg-h3{
+    border-bottom: 1px solid #CCCCCC;
+}
+.blog-rg-h3::after{
+    content: "";
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: #B22222;
+    margin-top: 10px;
+}
+
+.blog-right-re{
+    margin: 10px 0px;
+    position: relative;
+}
+.blog-rg-i{
+    color: white;
+    position: absolute;
+    top: 45px;
+    left: 45px;
+    opacity: 0;
+}
+.blog-right-re:hover .blog-rg-i{
+    opacity: 1;
+    transition: 1s;
+}
+.blog-rg-rel{
+    float: left;
+    margin-right: 15px;
+}
+.blog-rg-rer{
+    padding: 15px 0px;
+    
+}
+.blog-rg-rer p a{
+    color: black;
+    word-wrap:break-word;
+}
+.blog-rg-rer a:hover{
+    color:blue;
+    text-decoration: none;
+}
+.blog-rg-rer p{
+    
+    margin-bottom: 5px;
+    color: grey;
+    
+}
+.blog-rg-rec-p{
+    margin: 8px;
+    font-size: 16px;
+}
+.blog-rg-rec-p i{
+    color: grey;
+}
+.blog-rg-rec-p a{
+    color: #2F2E2E;
+    padding:0px 8px;
+}
+.blog-rg-rec-p a:hover{
+    text-decoration: none;
+    color: #1D5EA5;
+}
+.blog-rg-rec-p span{
+    color: grey;
+    padding:0px 8px;
+}
+.swiper-button-next1{
+    display: inline-block;
+    padding: 10px;
+    background-color: #808080;
+    position: absolute;
+    top: 35%;
+    left: 0px;
+    z-index: 22;
+}
+.swiper-button-next1 i ,.swiper-button-prev2 i{
+    color: white;
+}
+.swiper-button-prev2{
+    display: inline-block;
+    padding: 10px;
+    background-color: #808080;
+    position: absolute;
+    top: 35%;
+    right: 0px;
+    z-index: 22;
+}
+.blog-rg-img{
+    margin: 25px 0px;
+}
+caption{
+    caption-side: top;
+    color: red;
+}

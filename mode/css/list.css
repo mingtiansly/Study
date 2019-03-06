@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.list-back{
+    width: 100%;
+    background-color: white;
+    border-bottom:1px solid #CCCCCC ;
+}
+.list-back h4{
+    padding: 15px;
+    color: grey;
+}
+.list-back p{
+    text-align: right;
+    padding: 15px;
+    margin-bottom: 0px;
+}
+.list-back p a:hover{
+    text-decoration: none;
+}
+.feiye {
+     text-align: center;
+     margin-top: 30px;
+     margin-bottom: 30px;
+}
+.feiye a:hover{
+    text-decoration: none;
+    color:white;
+    background-color: #1D5EA5;
+}
+.feiye a{
+    color: grey;
+    padding: 5px 10px;
+    text-align: center;
+    border: 1px solid #CCCCCC;
+    margin-right: 5px;
+   
+}
+ .active1{
+   
+    background-color: #1D5EA5;
+}

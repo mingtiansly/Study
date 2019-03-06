@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>首页</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="stylesheet" href="dist/css/swiper.css" />
+        <link rel="stylesheet" href="dist/css/swiper.min.css" />
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <script src="dist/js/swiper.min.js"></script>
+        <script src="js/index.js"></script>
+        
+        <style>
+            
+            .navbar-light .navbar-nav .nav-link{
+                 display: inline-block;
+                color: #FFFFFF;
+                font-weight: 500;
+                
+            }
+            .nav-fill .nav-item{
+                text-align: left;
+            }
+        </style>
+        <!-- <script>
+            $(document).ready(function(){
+                    $(".index-img-yue").click(function(){
+                        $(".index-tan").css("display","block");
+                    });
+                    $(".err").click(function(){
+                         $(".index-tan").css("display","none");
+                    })
+            })
+        </script> -->
+	</head>
+	<body>
+        
+        <div class="container-fluid" style="padding: 0px;">
+
+            <div class="wai1">
+                <div class="container" style="margin: 0 auto;">
+                    <div class="row">
+                        <div class="col-md-2 col-4">
+                            <img src="img/logowinterzone.png" class="img-fluid index-logo"/>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-7 index-nav">
+                             <nav class="nav navbar navbar-expand-lg navbar-light bg-light1 nav-pills nav-fill"
+                              style="flex-direction: row-reverse;">
+                                <button class="navbar-toggler" type="button" 
+                                  data-toggle="collapse" data-target="#navbarNavDropdown" 
+                                  aria-controls="navbarNavDropdown"
+                                   aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></button>
+                                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                    <ul class="navbar-nav" style="width: 100%;">
+                                     <li class="nav-item ">
+                                      <a class="nav-link index-li" href="index.html">
+                                          HOME
+                                          <div class="index-xian"></div>
+                                      </a>
+                                     </li>
+                                     <li class="nav-item ">
+                                      <a class="nav-link index-li" href="Listings.html">
+                                          LISTINGS
+                                          <div class="index-xian"></div>
+                                      </a>
+                                     </li>
+                                     <li class="nav-item ">
+                                      <a class="nav-link index-li" href="about.html">
+                                          ELEMENTS
+                                          <div class="index-xian"></div>
+                                      </a>
+                                     </li>
+                                     <li class="nav-item ">
+                                      <a class="nav-link index-li" href="cont.html">
+                                          PAGES
+                                          <div class="index-xian"></div>
+                                      </a>
+                                     </li>
+                                      <li class="nav-item ">
+                                       <a class="nav-link index-li" href="blog.html">
+                                           BLOG
+                                           <div class="index-xian"></div>
+                                       </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                              </nav> 
+                        </div>
+                        <div class="col-1 index-top-right d-none d-lg-block">
+                            <i class="fa fa-search fa=lg" aria-hidden="true"></i>
+                        </div>
+                        
+                        <div class="col-1 index-top-right1 d-none d-lg-block">
+                            <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+                            <div class="index-right-none">
+                                <i class="fa fa-times error" aria-hidden="true" 
+                                style="color: #000000;margin: 10px 10px; float: right;"></i>
+                                <h4 class="index-right-h4">WinterZone</h4>
+                                <h5 style="text-align: left; margin-left: 10px;">Contact information</h5>
+                                <div class="index-hengxian" style="margin-left: 10px;"></div>
+                                <p class="index-right-i"><i class="fa fa-phone" aria-hidden="true"
+                                 style="color: black;margin: 5px 10px; float: left;"></i>(+40) 74 0920 2288</p>
+                                <p class="index-right-i"><i class="fa fa-envelope" aria-hidden="true"
+                                  style="color: black;margin: 5px 10px; float: left;"></i>office@example.com</p>
+                                <p class="index-right-i"><i class="fa fa-map-marker" aria-hidden="true"
+                                   style="color: black;margin: 5px 10px; float: left;"></i>New York 11673 Collins</p>
+                                <ul class="index-right-ul">
+                                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"
+                                   style="color: firebrick;margin: 5px 10px;padding: 5px 8px; border: 1px #808080 solid;"></i>
+                                   </a></li>
+                                   <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"
+                                   style="color: firebrick;margin: 5px 10px;padding: 5px 8px; border: 1px #808080 solid;"></i>
+                                   </a></li>
+                                   <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"
+                                   style="color: firebrick;margin: 5px 10px;padding: 5px 8px; border: 1px #808080 solid;"></i>
+                                   </a></li>
+                                   <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"
+                                   style="color: firebrick;margin: 5px 10px;padding: 5px 8px; border: 1px #808080 solid;"></i>
+                                   </a></li>
+                                   <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"
+                                   style="color: firebrick;margin: 5px 10px;padding: 5px 8px; border: 1px #808080 solid;"></i>
+                                   </a></li>
+                                   <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"
+                                   style="color: firebrick;margin: 5px 10px;padding: 5px 8px; border: 1px #808080 solid;"></i>
+                                   </a></li>
+                                   <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"
+                                   style="color: firebrick;margin: 5px 10px;padding: 5px 8px; border: 1px #808080 solid;"></i>
+                                   </a></li>
+                                </ul>
+                                <div class="clearfix"></div>
+                                <h5 style="text-align: left; margin-left: 10px;margin-top: 30px;">
+                                    Post thumbnails slider</h5>
+                                <div class="index-hengxian" style="margin-left: 10px;"></div>
+                                <div class="index-right-lunbo">
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                            	<img src="img/blog-post-2-min-700x450.jpg"  class="img-fluid"/>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="img/blog-post-1-min-700x450.jpg" class="img-fluid"/> 
+                                            </div>
+                                        	<div class="swiper-slide">
+                                        	    <img src="img/blog-post-6-min-700x450.jpg" class="img-fluid"/> 
+                                        	</div>
+                                        </div>
+                                    	<div class="swiper-button-next"></div>
+                                        <div class="swiper-button-prev"></div>
+                                    </div>
+                                </div>
+                                <h5 style="text-align: left; margin-left: 10px;margin-top: 30px;">
+                                    Tags</h5>
+                                <div class="index-hengxian" style="margin-left: 10px;"></div>
+                                <div class="index-right-a">
+                                    <a href="#">activity</a>
+                                    <a href="#">chalet</a>
+                                    <a href="#">engine care</a>
+                                    <a href="#">engineering</a>
+                                    <a href="#">equipment</a>
+                                    <a href="#">mount</a>
+                                    <a href="#">snow</a>
+                                    <a href="#">travel</a>
+                                    <a href="#">winter</a>
+                                    <a href="#">winter season</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+         <!-- banner -->
+         <div class="wai2">
+             <div class="index-banner">
+                 <img src="img/TIM.jpg"  class="img-fluid"/>
+                 <div class="index-font">
+                     <h2>RENT WINTER EQUIPMENT</h2>
+                     <h4>2017 Winter Skis are Now Available</h4>
+                 </div>
+             </div>
+         </div>
+         <!-- LATEST EQUIPMENT -->
+         <div class="wai3">
+             <div class="container" style="margin:0 auto;">
+                 <h3>LATEST EQUIPMENT</h3>
+                 <div class="index-hengxian"></div>
+                 <div class="index-la-p">
+                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur.</p>
+                 </div>
+                 <div class="index-tupian">
+                     <div class="row">
+                        <div class="col-sm-4 index-tu1">
+                            <p>
+                                <img src="img/winterzone-Blue-Skis-Maskk-800x800.jpg" class="img-fluid index-la-img"/>
+                            <a class="index-tu"></a>
+                            </p>
+                            
+                            <h4 class="index-la-tu-h4">
+                                <a class="index-la-tu-a" href="#">Skis mask</a>
+                            </h4>
+                            <p class="index-la-tu-p">Unisex | 5$ per day</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p><img src="img/winterzone-Snowboard-800x800.jpg" 
+                            class="img-fluid index-la-img" />
+                            
+                            </p>
+                            <h4 class="index-la-tu-h4">
+                                <a class="index-la-tu-a" href="#">Snowboard</a>
+                            </h4>
+                            <p class="index-la-tu-p">Unisex | 10$ per day | Size 38-45  </p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p><img src="img/winterzone-full-equipment-800x800.jpg" 
+                            class="img-fluid index-la-img" /></p>
+                            <h4 class="index-la-tu-h4">
+                                <a class="index-la-tu-a" href="#">Snowboard equipment</a>
+                            </h4>
+                            <p class="index-la-tu-p">Unisex | 99$ per day</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p><img src="img/WINTERZONE-Snowmobile-800x800.jpg" 
+                            class="img-fluid index-la-img" /></p>
+                            <h4 class="index-la-tu-h4">
+                                <a class="index-la-tu-a" href="#">Snowmobile</a>
+                            </h4>
+                            <p class="index-la-tu-p">Unisex | 50$ per day</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p><img src="img/WINTERZONE-Ski-Pole-stick-800x800.jpg" 
+                            class="img-fluid index-la-img" /></p>
+                            <h4 class="index-la-tu-h4">
+                                <a class="index-la-tu-a" href="#">Skis</a>
+                            </h4>
+                            <p class="index-la-tu-p">Unisex | 20$ per day | Size 22-54</p>
+                        </div>
+                        <div class="col-sm-4">
+                            <p><img src="img/winterzone-red-skiss-800x800.jpg" 
+                            class="img-fluid index-la-img" /></p>
+                            <h4 class="index-la-tu-h4">
+                                <a class="index-la-tu-a" href="#">Ski Pole stick</a>
+                            </h4>
+                            <p class="index-la-tu-p">Unisex | 10$ per day</p>
+                        </div>
+
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <!-- 中间图片定位与数字增长 -->
+         <div class="wai4">
+             <div class="index-tu-pos">
+                 <div class="index-tu-pu tu"></div>
+             </div>
+             <div class="container" style="margin: 0 auto;margin-top: 50px; margin-bottom: 50px;">
+                    
+                     <div class="row">
+                         <div class="col-sm-3 index-tu-shuzi" >
+                             <h2 id="nm">820</h2>
+                             <p>Equipments</p>
+                         </div>
+                         <div class="col-sm-3 index-tu-shuzi" >
+                             <h2 id="nm1">152</h2>
+                             <p>Experience </p>
+                         </div>
+                         <div class="col-sm-3 index-tu-shuzi" >
+                             <h2 id="nm2">554</h2>
+                             <p>Happy Clients</p>
+                         </div>
+                         <div class="col-sm-3 index-tu-shuzi" >
+                             <h2 id="nm3">25</h2>
+                             <p>Years Of Experience</p>
+                         </div>
+                     </div>
+                 </div>
+             
+         </div>
+         <!-- OUR SERVICES -->
+         <div class="wai3">
+             <div class="container" style="margin:0 auto;">
+                 <h3>OUR SERVICES</h3>
+                 <div class="index-hengxian"></div>
+                 <div class="index-la-p">
+                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur.</p>
+                 </div>
+                 <div class="index-tupian">
+                     <div class="row">
+                        <div class="col-sm-8">
+                            <!-- 折叠 -->
+                                 <div class="accordion" id="accordionExample">
+                                  <div class="card">
+                                        <div class="card-header index-our-zhe" id="headingOne" 
+                                        data-target="#collapseOne" data-toggle="collapse">
+                                         <div class="show1">
+                                             <h5 class="mb-0 index-our-h5">
+                                               OUR EQUIPMENT</h5><span> - </span>
+                                               <div class="clearfix"></div>
+                                         </div>
+                                         <div class="push1">
+                                             <h5 class="mb-0 index-our-h5">
+                                               OUR EQUIPMENT</h5><span> + </span>
+                                               <div class="clearfix"></div>
+                                         </div>
+                                        </div>
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" 
+                                    data-parent="#accordionExample">
+                                      <div class="card-body">
+                                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor                                           incididunt ut labore et dolore magna aliqua.
+                                           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                                            nisi ut aliquip ex ea commodo consequat.
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="card">
+                                    <div class="card-header collapsed index-our-zhe" id="headingTwo" 
+                                    data-toggle="collapse"
+                                         data-target="#collapseTwo" >
+                                         <div class="show1">
+                                      <h5 class="mb-0 index-our-h5">
+                                        RACE TRAINING</h5><span> + </span> 
+                                         <div class="clearfix"></div>
+                                        </div>
+                                         <div class="push1">
+                                        <h5 class="mb-0 index-our-h5">
+                                          RACE TRAINING</h5><span> - </span> 
+                                           <div class="clearfix"></div>
+                                          </div>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" 
+                                    data-parent="#accordionExample">
+                                      <div class="card-body">
+                                           LLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                                           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                            commodo consequat.
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="card">
+                                    <div class="card-header collapsed index-our-zhe" id="headingThree" 
+                                    data-toggle="collapse"
+                                         data-target="#collapseThree" >
+                                         <div class="show1">
+                                      <h5 class="mb-0 index-our-h5">
+                                        PRIVATE LESSONS</h5><span> + </span> <div class="clearfix"></div>	
+                                        </div>
+                                        <div class="push1">
+                                        <h5 class="mb-0 index-our-h5">
+                                          PRIVATE LESSONS</h5><span> - </span>	 <div class="clearfix"></div>
+                                          </div>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" 
+                                    data-parent="#accordionExample">
+                                      <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                                             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                             commodo consequat.
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="card">
+                                    <div class="card-header collapsed  index-our-zhe" id="heading1" 
+                                    data-toggle="collapse"
+                                         data-target="#collapsefpur" >
+                                         <div class="show1">                                         
+                                      <h5 class="mb-0 index-our-h5">
+                                        SKI TOURING</h5><span> + </span> <div class="clearfix"></div>
+                                        </div>
+                                        <div class="push1">                                         
+                                        <h5 class="mb-0 index-our-h5">
+                                          SKI TOURING</h5><span> - </span>
+                                           <div class="clearfix"></div></div>
+                                    </div>
+                                    <div id="collapsefpur" class="collapse" aria-labelledby="heading1" 
+                                    data-parent="#accordionExample">
+                                      <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                                             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                             commodo consequat.
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="card">
+                                    <div class="card-header collapsed index-our-zhe" id="heading2" 
+                                    data-toggle="collapse"
+                                         data-target="#collapsefpur" >
+                                         <div class="show1">  
+                                      <h5 class="mb-0 index-our-h5">
+                                        BOOKING</h5><span> + </span> <div class="clearfix"></div>
+                                        </div>
+                                         <div class="push1">  
+                                        <h5 class="mb-0 index-our-h5">
+                                          BOOKING</h5><span> - </span> <div class="clearfix"></div>
+                                          </div>
+                                    </div>
+                                    <div id="collapsefive" class="collapse" aria-labelledby="heading2" 
+                                    data-parent="#accordionExample">
+                                      <div class="card-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                                             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                             commodo consequat.
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="card">
+                                    <div class="card-header collapsed index-our-zhe" id="heading3" 
+                                    data-toggle="collapse"
+                                         data-target="#collapsesix" >
+                                         <div class="show1">
+                                      <h5 class="mb-0 index-our-h5">
+                                        PRICINGS</h5><span> + </span> <div class="clearfix"></div> 	
+                                        </div>
+                                        <div class="push1">
+                                        <h5 class="mb-0 index-our-h5">
+                                          PRICINGS</h5><span> - </span>  <div class="clearfix"></div>	
+                                          </div>
+                                    </div>
+                                    <div id="collapsesix" class="collapse" aria-labelledby="heading3" 
+                                    data-parent="#accordionExample">
+                                      <div class="card-body">
+                                           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                                           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                                           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                                           consequat.
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="img/winterzone-services.jpg"  class="img-fluid" />
+                        </div>
+                        
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <!-- 滑雪大图片音乐 -->
+         <div class="wai5">
+             <img src="img/video-bg.jpg" class="img-fluid" />
+         	 <img src="img/232332.png" class="img-fluid index-img-yue" />
+             <div class="index-tan">
+                 <i class="fa fa-times err" aria-hidden="true"></i>
+                 <div class="index-tan-con"></div>
+             </div>
+         </div>
+           <!-- PHOTO GALLERY -->
+            <div class="wai6">
+                <div class="container" style="margin:0 auto;">
+                    <h3>PHOTO GALLERY</h3>
+                    <div class="index-hengxian"></div>
+                    <div class="index-la-p">
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur.</p>
+                    </div>
+                    <div class="row" style="margin-top: 30px;">
+                        <div class="col-sm-4">
+                            <img src="img/winterzone-gallery1-1.jpg" class="img-fluid index-pho-img" >
+                            <!-- <div class="index-pho-zhe">
+                            	<div class="index-pho-tu">
+                                    <i class="fa fa-arrows-alt err1" aria-hidden="true"></i>
+                            		<img src="img/winterzone-gallery1-1.jpg" class="img-fluid" >
+                                     <i class="fa fa-times err2" aria-hidden="true"></i>
+                                     <div class="clearfix"></div>
+                                </div>
+                                <div class="index-pho-tu1">
+                                    <i class="fa fa-crosshairs fa-lg err1 err3" aria-hidden="true"></i>
+                                    <img src="img/winterzone-gallery1-1.jpg" class="index-pho-img2 img-fluid" >
+                                    <i class="fa fa-times err2" aria-hidden="true"></i>
+                                    <div class="clearfix"></div>
+                            	</div>
+                            </div> -->
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="index-pho-top">
+                            	<img src="img/winterzone-gallery3.jpg" class="img-fluid index-pho-img"/>
+                                
+                            </div>
+                            <div class="index-pho-bootm">
+                            	<img src="img/winterzone-gallery2-2.jpg" class="img-fluid index-pho-img"/ >
+                                
+                            </div>
+                            
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="img/winterzone-gallery4.jpg" class="img-fluid index-pho-img" >
+                        </div>
+                        
+                        
+                        <div class="index-pho-zhe" id="outerdiv" >
+                        	<div class="index-pho-tu" id="innerdiv">
+                                <i class="fa fa-arrows-alt  err1" aria-hidden="true"></i>
+                        		<img src="" class="img-fluid"  id="bigimg" >
+                                 <i class="fa fa-times err2" aria-hidden="true"></i>
+                                 <div class="clearfix"></div>
+                            </div>
+                            <div class="index-pho-tu1">
+                                <i class="fa fa-crosshairs fa-lg err3" aria-hidden="true"></i>
+                                <img src="" class="img-fluid" id="bigimg1">
+                                <i class="fa fa-times err2" aria-hidden="true"></i>
+                                <div class="clearfix"></div>
+                        	</div> 
+                        </div>
+                        
+                        
+                        
+                    </div>
+                  </div> 
+            </div>
+          <!-- OUR TESTIMONIAL -->
+            <div class="wai7">
+                <div class="container" style="margin:0 auto; margin-top: 40px;padding-top:70px;">
+                    <div class="row">
+                        <div class="col-sm-5"></div>
+                        <div class="col-sm-7">
+                            <h3 style="text-align: left; margin-left: 0;">OUR TESTIMONIAL</h3>
+                            <div class="index-hengxian" style="margin-left: 0px;"></div>
+                        
+                            <div class="index-la-p " style="margin-left: 0px;">
+                                <p  style="text-align:left;">
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia deserunt mollit anim id est.</p>
+                            </div>
+                          <div class="s">
+                        
+                           <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                               <div class="index-ourt-tu swiper-slide">
+                                 <div class="row">
+                                    <div class="index-ourt-tutop col-3">
+                                    	<img src="img/member2.png" class="img-fluid" >
+                                    </div>
+                                    <div class="index-ourt-tucont col-6">
+                                        <h4>Brian Bronson</h4>
+                                        <p>Business Man</p>
+                                    </div>
+                                    <div class="index-ourt-tubtoom col-3" style="float: left;">
+                                        <i class="fa fa-quote-right fa-3x" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="index-ourt-zi">
+                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="index-ourt-tu swiper-slide">
+                                 <div class="row">
+                                    <div class="index-ourt-tutop col-3">
+                                    	<img src="img/member3.png" class="img-fluid" >
+                                    </div>
+                                    <div class="index-ourt-tucont col-6">
+                                        <h4>Brian Bronson</h4>
+                                        <p>Business Man</p>
+                                    </div>
+                                    <div class="index-ourt-tubtoom col-3" style="float: left;">
+                                        <i class="fa fa-quote-right fa-3x" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="index-ourt-zi">
+                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                                </div>
+                            </div> 
+                            <div class="index-ourt-tu swiper-slide">
+                                 <div class="row">
+                                    <div class="index-ourt-tutop col-3">
+                                    	<img src="img/member4.png" class="img-fluid" >
+                                    </div>
+                                    <div class="index-ourt-tucont col-6">
+                                        <h4>Brian Bronson</h4>
+                                        <p>Business Man</p>
+                                    </div>
+                                    <div class="index-ourt-tubtoom col-3" style="float: left;">
+                                        <i class="fa fa-quote-right fa-3x" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="index-ourt-zi">
+                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                                </div>
+                            </div>
+                             <div class="index-ourt-tu swiper-slide">
+                                 <div class="row">
+                                    <div class="index-ourt-tutop col-3">
+                                    	<img src="img/member5.png" class="img-fluid" >
+                                    </div>
+                                    <div class="index-ourt-tucont col-6">
+                                        <h4>Brian Bronson</h4>
+                                        <p>Business Man</p>
+                                    </div>
+                                    <div class="index-ourt-tubtoom col-3" style="float: left;">
+                                        <i class="fa fa-quote-right fa-3x" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="index-ourt-zi">
+                                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</p>
+                                </div>
+                            </div> 
+                           </div>
+                           <!-- 分页 -->
+                           <div class="putton-left"><i class="fa fa-arrow-left fa-lg" aria-hidden="true"></i></div>
+                           <div class="putton-right"><i class="fa fa-arrow-right fa-lg" aria-hidden="true"></i></div>
+                         </div>  	
+                        </div> 
+                         </div>
+                    </div>
+            </div>
+          </div>  
+           <!-- CONTACT US -->
+          <div class="wai8">
+             <div class="container" style="margin:0 auto;padding-top:70px;">
+                 <div class="row">
+                 	<div class="col-7">
+                         <h3 style="text-align: left; margin-left: 0;">CONTACT US</h3>
+                         <div class="index-hengxian" style="margin-left: 0px;"></div> 
+                          <div class="index-la-p " style="margin-left: 0px;">
+                             <p  style="text-align:left;">
+                                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                    accusantium doloremque laudantium, totam rem aperiam,eaque 
+                                    ipsa quae ab illo.</p>
+                         </div>
+                         <p class="index-cont-p">Call us: +40 444 656 322</p>
+                         <div class="index-cont">
+                         	<a class="index-cont-a" href="#"> CONTACT US</a>
+                         </div>
+                        </div>
+                    </div>
+                    <div class="container" style="margin:0 auto;padding-top:70px;">
+                        <h3 style="text-align: center;">EQUIPMENT BRANDS</h3>
+                        <div class="index-hengxian"></div> 
+                         <div class="index-la-p">
+                            <p>
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+                        <div class=" sw">
+                            <div class="swiper-container row">
+                                <div class="swiper-wrapper">
+                            <div class="index-cont-lubo col-md-4 col-sm-6 swiper-slide">
+                                <div class="index-cont-imgw">
+                                	<img src="img/client1-1.png" class="img-fluid index-cont-img" />
+                                </div>
+                                
+                            </div>
+                            <div class="index-cont-lubo col-md-4 col-sm-6 swiper-slide">
+                                <div class="index-cont-imgw">
+                                	<img src="img/client2-1.png" class="img-fluid index-cont-img" />
+                                </div>
+                            </div>
+                            <div class="index-cont-lubo col-md-4 col-sm-6 swiper-slide">
+                                <div class="index-cont-imgw">
+                                	<img src="img/client3-1.png" class="img-fluid index-cont-img" />
+                                </div>
+                            </div>
+                            <div class="index-cont-lubo col-md-4 col-sm-6 swiper-slide">
+                                <div class="index-cont-imgw">
+                                	<img src="img/client4-1.png" class="img-fluid index-cont-img" />
+                                </div>
+                            </div>
+                            <div class="index-cont-lubo col-md-4 col-sm-6 swiper-slide">
+                                <div class="index-cont-imgw">
+                                	<img src="img/client5-1.png" class="img-fluid index-cont-img" />
+                                </div>
+                            </div>
+                            <div class="index-cont-lubo col-md-4 col-sm-6 swiper-slide">
+                                <div class="index-cont-imgw">
+                                	<img src="img/client6-1.png" class="img-fluid index-cont-img" />
+                                </div>
+                            </div>
+                            <div class="index-cont-lubo col-md-4 col-sm-6 swiper-slide">
+                                <div class="index-cont-imgw">
+                                	<img src="img/client7-1.png" class="img-fluid index-cont-img" />
+                                </div>
+                            </div>
+                            <div class="index-cont-lubo col-md-4 col-sm-6 swiper-slide">
+                                <div class="index-cont-imgw">
+                                	<img src="img/client8-1.png" class="img-fluid index-cont-img" />
+                                </div>
+                            </div>
+                           </div>
+                            <!-- 分页 -->
+                            
+                            <div class="putton-left1"><i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i></div>
+                            <div class="putton-right1"><i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i></div>
+                            
+                            
+                           
+                            </div>
+                            
+                    </div>
+                    </div>
+                    
+             </div>
+          </div>  
+           <!-- 底部 -->
+           <div class="footer">
+               <div class="container" style="margin: 0 auto;">
+                   <div class="row">
+                       <div class="footer-left col-md-3">
+                       	<p><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="#">TERMS & CONDITIONS</a></p>    
+                       	<p><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="#">CONTACT US</a></p>
+                       	<p><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="#">LEGAL & POLICY</a></p>
+                       </div>
+                       <div class="footer-left col-md-3">
+                       	<p><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="#">ABOUT US</a> </p>    
+                       	<p><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="#">BLOG POST</a></p>
+                       	<p><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="#">SERVICES</a></p>
+                       </div>
+                       <div class="footer-left col-md-3">
+                       	<p><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="#">ABOUT SERVICE</a></p>    
+                       	<p><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="#">PRICINGS</a></p>
+                       	<p><i class="fa fa-chevron-right" aria-hidden="true"></i><a href="#">LATEST NEWS</a></p>
+                       </div>
+                       <div class="footer-cont  col-md-3">
+                       	<p><i class="fa fa-phone" aria-hidden="true"></i><a href="#">(+40) 74 0920 2288</a></p>    
+                       	<p><i class="fa fa-envelope" aria-hidden="true"></i><a href="#">office@example.com</a></p>
+                       	<p><i class="fa fa-map-marker" aria-hidden="true"></i><a href="#">New York 11673 Collins</a></p>
+                       </div>
+                       
+                   </div>
+               </div>
+               <div class="footer-bootm">
+               	<p>Copyright 2018 by ModelTheme. All Rights Reserved.</p>
+               </div>
+           </div> 
+            
+            
+            
+        </div>
+        <script src="dist/js/swiper.min.js"></script>
+        <script>
+    var swiper = new Swiper('.s .swiper-container', {
+      navigation: {
+       prevEl: '.putton-left',
+        nextEl: '.putton-right',
+      },
+    });
+    var swiper = new Swiper('.sw .swiper-container', {
+        autoplay:true,
+         slidesPerView: 3,
+      spaceBetween: 10,
+      freeMode: true,
+      navigation: {    
+      
+        prevEl: '.putton-left1',
+        nextEl: '.putton-right1',
+      },
+    });
+    var swiper = new Swiper('.index-right-lunbo .swiper-container', {
+        observer:true,//修改swiper自己或子元素时，自动初始化swiper
+        observeParents:true,//修改swiper的父元素时，自动初始化swiper
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
+  </script>
+	</body>
+</html>

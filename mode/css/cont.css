@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.cont-wai{
+    width: 100%;
+    background: url(../img/contact-1.jpg);
+    background-position: 50% 50%;
+  text-align: center;
+  padding: 100px 0px;
+}
+.cont-con{
+   display: inline-block; 
+   background-color: white;
+   padding-bottom: 30px;
+   
+}
+.cont-form{
+    padding: 30px 30px 10px 15px;
+    
+}
+form i {
+    margin-right: 15px;
+}
+.cont-input{
+    margin-right: 40px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.cont-form, .cont-form1{
+    border-bottom: 1px solid #CCCCCC;
+}
+.cont-forem-i{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+textarea{
+    border: none;
+    padding: 50px;
+}
+.cont-con a{
+    padding: 25px 40px;
+    background-color: #E74C3C;
+    color: white;
+    border-radius: 20px;
+    line-height: 70px; 
+    
+}
+.cont-con a:hover{
+    background-color: #1D5EA5;
+    text-decoration: none;
+}
+.cont-i-left{
+    text-align: center;
+   
+    padding: 30px 15px;
+}
+.cont-i{
+    color: #E74C3C;
+    padding: 15px;
+}
