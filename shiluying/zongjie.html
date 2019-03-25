@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>总结</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+        
+        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+        <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        
+        
+        <style type="text/css">
+            *{
+                padding: 0;
+                margin: 0;
+            }
+            #cont{
+                margin:  0 auto;
+                border:1px solid #049DFF;
+                border-radius: 10px;
+                box-shadow: 1px -2px 20px 5px #8fa5bf;
+            }
+        	.p-p1 a:hover{
+        	    color: red;
+        	}
+        	.p-p1 a:active{
+                color: black;
+            }
+            .div1 , .div2 , .div3{
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                float: left;
+                font-size: 12px;
+                text-align: center;
+                line-height: 60px;
+            }
+            .div1{
+                background-color: #0070E8;
+                opacity: 0.5;
+            }
+            .div2{
+                background: rgba(110,110,00,0.5);
+            }
+            .div3{
+                background: linear-gradient(to right,yellow,green);
+            }
+            .divb{
+                position: relative;
+                width: 150px;
+                height: 150px;
+                z-index: 1;
+                overflow: hidden;
+            }
+            .divclip{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                clip: rect(auto,auto,auto,auto);
+                
+            }
+            .tu1{
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                z-index: -3;
+                background: url(img/bigimg.jpg);
+                background-position: 50% 50%;
+                height: 800px;
+                width: 100%;
+            }
+            .divp{
+                color: white;
+            }
+            .p-ab:before{
+                content:"中卫";
+                background-color:yellow;
+                color:red;
+                font-weight:bold
+            }
+            .p-ab:after{
+                content:"sssd";
+                background-color:green;
+                color:red;
+                font-weight:bold
+            }
+            .divtr1,.divtr2,.divtr3,.divtr4{
+                width: 200px;
+                height: 120px;
+                margin: 0 auto;
+                margin-top: 10px;
+                background-color: #939FA6;
+               
+            }
+            .divtr2:hover{
+                background-color: #049DFF;
+                transform: translate3d(20px, 0px, 0px);
+                transition: 1s;
+            }
+            .divtr3:hover{
+                background-color:#DEB887;
+                transform: scale3d(1.2,1.4,1);
+                transition: 1s;
+            }
+            .divtr4:hover{
+                background-color: #25BF80;
+                transform: rotate3d(0,0,1,45deg);
+                transition: 1s;
+            }
+            .donghua{
+                width:100px;
+                height:100px;
+                background:red;
+                position:relative;
+                animation:myfirst 5s linear 2s infinite alternate
+            }
+            @keyframes myfirst
+            {
+                0%   {background:red; left:0px; top:0px;}
+                25%  {background:yellow; left:200px; top:0px;}
+                50%  {background:blue; left:200px; top:200px;}
+                75%  {background:green; left:0px; top:200px;}
+                100% {background:red; left:0px; top:0px;}
+            }
+
+        </style>
+        
+        
+	</head>
+	<body>
+        <div class="container" id="cont">
+        	<div class="row">
+        		<div class="col-sm-4">
+                    
+        			<p class="p-p1"><a href="javascript:void(0)"> 链接是通过标签 a 来定义的.  a:active 必须在 a:hover 之后</a></p>
+                    <h3>边框</h3>
+                    <p> border:1px solid #049DFF;</p>
+                    <h3>圆角</h3>
+                    <p> border-radius: 10px; 圆形50%</p>
+                    <p>dotted: 定义一个点线边框 <br> dashed: 定义一个虚线边框 solid: 实线边框</p>
+                    <p>box-shadow: 1px -2px 20px 5px #8fa5bf;</p>
+                    <p>box-shadow: h-shadow v-shadow blur spread color inset;</p>
+                    <ul style="list-style-position: inside;">
+                        <li>h-shadow	必需的。水平阴影的位置。允许负值</li>
+                        <li>v-shadow	必需的。垂直阴影的位置。允许负值</li>
+                        <li>blur	可选。模糊距离</li>
+                        <li>spread	可选。阴影的大小</li>
+                        <li>color	可选。阴影的颜色</li>
+                        <li>nset	可选。从外层的阴影（开始时）改变阴影内侧阴影</li>
+                        </ul>
+                        <h3>ul中样式</h3>
+                    <ul style="list-style-position: outside;">
+                        <li>list-style-type	设置列表项标记的类型</li>
+                        <li>circle</li>
+                        <li>square 以及 none</li>
+                    </ul>
+                    <h5>ul的区别一个是list-style-position: inside; 一个是outside</h5>
+                    <h3>定位图片剪裁</h3>
+                    <div class="divb">
+                        <div class="divclip">
+                        	<div class="tu1"></div>
+                          </div>
+                            <div class="divp">
+                            	我这里使用clip和定位
+                                加上overflow hidden 使它超出范围时隐藏
+                            </div>
+                    </div>
+                    <p>fixed 定位元素的位置相对于浏览器窗口是固定位置。即使窗口是滚动的它也不会移动：</p>
+                    <p>position 属性指定了元素的定位类型。</p>
+                    <p>relative 定位相对定位元素的定位是相对其正常位置。相对定位元素经常被用来作为绝对定位元素的容器块</p>
+                    <p>absolute 定位绝对定位的元素的位置相对于最近的已定位父元素，如果元素没有已定位的父元素，那么它的位置相对于 html </p>
+                    <p>元素的定位与文档流无关，所以它们可以覆盖页面上的其它元素z-index属性指定了一个元素的堆叠顺序（哪个元素应该放在前面，或后面）一个元素可以有正数或负数的堆叠顺序：</p>
+                    <p>clip 裁剪 如果图像大于包含它的元素，会发生什么？-clip属性，让你指定一个绝对定位的元素，该尺寸应该是可见的，该元素被剪裁成这种形状并显示。设置元素的形状。唯一合法的形状值是：rect (top, right, bottom, left) auto	默认值,不应用任何剪裁。</p>
+                    <p>overflow属性指定如果内容溢出一个元素的框，会发生什么</p>
+                    <p>visible	默认值。内容不会被修剪，会呈现在元素框之外。hidden内容会被修剪，并且其余内容是不可见的。scroll	内容会被修剪，但是浏览器会显示滚动条以便查看其余的内容。auto	如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。
+inherit	规定应该从父元素继承 overflow 属性的值。</p>
+<img src="img/z1.png" class="img-fluid" >
+<img src="img/z2.png" class="img-fluid" >
+                    <h3>CSS3动画</h3>
+                   <p>CSS3动画 @keyframes规则内指定一个CSS样式和动画将逐步从目前的样式更改为新的样式。当在 @keyframes 创建动画，把它绑定到一个选择器，否则动画不会有任何效果。指定至少这两个CSS3的动画属性绑定向一个选择器：1,规定动画的名称2,规定动画的时长</p> 
+                    <div class="donghua">
+                    	
+                    </div>
+                   <p> animation	所有动画属性的简写属性</p>
+                   <p>简写animation：myfirst 5s linear 2s infinite alternate;</p>
+                   <p>第一个是动画的名称</p>
+                   <p>第二个动画所需时间</p>
+                   <p>动画速度曲线与transition相同</p>
+                   <p>动画延迟多长时间开始</p>
+                   <p>循环，这是无限，默认1</p>
+                   <p>是否反方向播放</p>
+                   <img src="img/z3.png" class="img-fluid" > 
+                    
+        		</div>
+                <div class="col-sm-4">
+                    <h3>浮动</h3>
+                	<div class="div1">
+                		float 
+                	</div>
+                    <div class="div2">
+                    	left，righ
+                    </div>
+                    <div class="div3">
+                    	渐变
+                    </div>
+                    <div style="clear: both;">
+                    	清除浮动clear：both;在左右两侧均不允许浮动元素。
+                    </div>
+                     <p>第一个div使用了opacity: 0.5;改变透明度 </p>
+                    <p>第二个div使用了rgba(110,110,00,0.5)改变透明度 区别</p>
+                    <p>第三个div 使用了渐变background: linear-gradient(direction, color-stop1, color-stop2, ...);也可以写角度第一个属性45deg，颜色也可以使用rgba透明</p>
+                    <img src="img/z5.png" class="img-fluid" >
+                    <h3>伪元素 </h3>
+                    <p class="p-ab">伪元素 :after 选择器向选定的元素之后插入内容。
+
+使用content 属性来指定要插入的内容。:before 选择器向选定的元素前插入内容.它控制的内容实际上和元素是相同的，但是它本身只是基于元素的抽象，并不存在于文档中，所以叫伪元素。</p>
+<img src="img/z6.png" class="img-fluid" >
+<h3>display 属性</h3>
+
+                    <p style="display: inline;">display 属性设置一个元素应如何显示</p>
+                    <p style="display: inline;">inline	默认。此元素会被显示为内联元素，元素前后没有换行符。原本p是块元素，设了inline成了一行显示</p>
+                    <img src="img/z7.png" class="img-fluid" >
+                    <span style="display: block;">block	此元素将显示为块级元素，此元素前后会带有换行符。</span>
+                    <p>display:inline-block -- 显示为内联块元素，表现为同行显示并可修改宽高内外边距等属性我们常将元素加上display:inline-block样式，原本垂直的列表就可以水平显示了</p>
+                    <ul>
+                    	<li style="display: inline-block;">aaaa</li>
+                        <li style="display: inline-block;">2222</li>
+                        <li style="display: inline-block;">3333</li>
+                    </ul>
+                    
+                    <p>对于 CSS 里的 visibility 属性，通常其值被设置成 visible 或 hidden。visibility: hidden 相当于 display:none，能把元素隐藏起来，但两者的区别在于：
+ 1、display:none 元素不再占用空间。
+ 2、visibility: hidden 使元素在网页上不可见，但仍占用空间.</p>
+                    <h3>Transform属性</h3>
+                    <div class="divtr1">Transform属性应用于元素的2D或3D转换。这个属性允许你将元素旋转，缩放，移动，倾斜等</div>
+                    
+                    <div class="divtr2">translate3d(x,y,z)	定义 3D 转换。使用的transition过度</div>
+                    
+                    <div class="divtr3">scale3d(x,y,z) 这个属性允许你将元素旋转，缩放，移动，倾斜等. 1是正常 >1是放大 小于 1是缩小</div>
+                    
+                    <div class="divtr4">rotate3d(x,y,z,angle)	定义 3D 旋转。最后一个属性是角度值例如45deg.xyz位置若是1，表示要改变 0则表示不改变</div>
+                 
+                <p>transition属性是一个速记属性有四个属性：transition-property, transition-duration, transition-timing-function, and transition-delay。</p>
+                <p>transition-delay: time; time	指定秒或毫秒数之前要等待切换效果开始</p>
+                <p>transition-duration 属性规定完成过渡效果需要花费的时间（以秒或毫秒计）</p>
+                <p>transition-timing-function: linear|ease|ease-in|ease-out|ease-in-out|cubic-bezier(n,n,n,n);</p>
+                <p>linear	规定以相同速度开始至结束的过渡效果</p>
+                <p>ease	规定慢速开始，然后变快，然后慢速结束的过渡效果</p>
+                <p>ease-in	规定以慢速开始的过渡效果</p>
+                <img src="img/z4.png" class="img-fluid" >
+                </div>
+                <div class="col-sm-4">
+                	<p>js<p>
+                    <p><a href="javascript:void(0)">超链接a，若是点击会发生跳转</a></p>
+                    <p>不想其发生跳转加上javascript:void(0)  void 是 JavaScript 中非常重要的关键字，该操作符指定要计算一个表达式但是不返回值</p>
+                     <img src="img/z8.png" class="img-fluid" >
+                     <img src="img/qq.png" class="img-fluid" >
+                    <div class="clik">
+                    	<p>点击按钮发生关闭事件</p>
+                        
+                    </div>
+                     <img src="img/z9.png" class="img-fluid" >
+                     
+                    
+                    <h3>返回顶部</h3>
+                    <div class="scall"
+                    	<li>onscroll 事件在元素滚动条在滚动时触发。</li>
+                        <li>scrollTop() 方法设置或返回被选元素的垂直滚动条位置。</li>
+                       <li> animate jq效果动画</li>
+                        <li>(selector).animate({styles},{options})</li>
+                        <li>写法</li>
+                        <li>$('html,body').animate({scrollTop: 0},1000);</li>
+                        <li> 获取滚动条位置</li>
+                         <li>document.documentElement.scrollTop
+                         ||document.body.scrollTop;
+                        </li>
+                        <li>event.stopPropagation() 方法阻止事件冒泡到父元素，阻止任何父事件处理程序被执行。</li>
+                        
+                    </div>
+                     <img src="img/zz.png" class="img-fluid" >
+                </div>
+        	</div>
+        </div>
+        <script type="text/javascript">
+          $(document).ready(function(){
+        	$(".clik").click(function(){
+                $(".clik").css("display","none");
+            })
+            });
+        </script>
+        
+	</body>
+</html>
