@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+       <input type="checkbox" name="qx"/>全选
+       <input type="checkbox" name="fx"/>反选
+       <input type="checkbox" name="x"/>
+       <input type="checkbox" name="x"/>
+       <input type="checkbox" name="x"/>
+       <input type="checkbox" name="x"/>
+       <input type="checkbox" name="x"/>
+       
+	</body>
+</html>
+<script>
+    var qx = document.getElementsByName('qx')[0];
+    var fx = document.getElementsByName("fx")[0];
+    var cks = document.getElementsByName("x");
+    qx.onclick = function(){
+        for(var i = 0;i < cks.length ; i++){
+            cks[i].checked = this.checked;
+        }
+        }
+    fx.onclick = function(){
+        for(var i = 0 ; i < cks.length ; i++){
+            if(cks[i].checked){
+                cks[i].checked = false;
+            }else{
+                cks[i].checked = true;
+            }
+        }
+    }
+    
+    
+</script>
